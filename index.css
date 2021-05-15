@@ -1,12 +1,26 @@
-  
-body{}
-.line{ background-color: black; width: 101%; height: 3px;
-       margin-top: 60px; margin-left: -8px}
-    /*top menu*/
-    .container{ display: flex;
-                flex-direction: row;
-                margin-left: 1050px;
-                margin-top: -50px;}
-    .menu{ margin: 5px; font-size: 20px; font-weight: bold;
-           border: 2px solid; padding-left: 5px; padding-right: 5px;}
-    /*end of top menu*/
+body{ }
+/*pictiure*/
+.pic{ background-image: url(HillView.gif);
+      background-repeat: no-repeat;
+      height: 815px;
+      background-size: 1600px 1000px;
+      margin-top:-70px; margin-left: -10px; margin-right:-8px;}
+/*end of picture*/
+      /*top menu*/
+      .container{ display: flex; 
+                  flex-direction: row;
+                  margin-left: 1050px; opacity: 60%;
+                  margin-top: -745px;}
+      .menu{ margin: 5px; font-size: 20px; color: white;
+             border: 2px solid; padding-left: 5px; padding-right: 5px;
+             border-radius: 4px 4px 4px 4px; font-family: arial;}
+      /*end of top menu*/
+      .line{ background-color: white; width: 101%; height: 3px;
+             margin-top: 5px; margin-left: -8px; opacity: 80%;}
+
+.header{ color: #663c3e; margin-top: 250px; text-align: center; opacity: 80%;
+         font-size: 100px; font-family: arial; font-weight: bold;
+         text-shadow: 5px 1px 11px white;}
+.header1{ color: #e0e0e0; text-align: center;  
+         font-size: 100px; font-family: arial; font-weight: bold;
+         text-shadow: 0px 3px 10px brown;}
