@@ -1,65 +1,96 @@
 body{ }
 /*pictiure*/
-.pic{ background-image: url(HillView.gif);
-      background-repeat: no-repeat;
-      height: 815px;
-      background-size: 1600px 1000px;
-      margin-top:-80px; margin-left: -10px; margin-right:-8px;}
+.pic{
+  background-image: url(HillView.gif);
+  background-repeat: no-repeat;
+  height: 815px;
+  background-size: 1600px 1000px;
+  margin-top:-80px; margin-left: -10px; margin-right:-8px;
+}
 /*end of picture*/
       /*top menu*/
-      .container{ display: flex; 
-                  flex-direction: row;
-                  margin-left: 1190px; opacity: 60%;
-                  margin-top: -735px;}
-      .menu{ margin: 5px; font-size: 20px; color: white; text-decoration: none;
-             border: 2px solid; padding-left: 5px; padding-right: 5px;
-             border-radius: 4px 4px 4px 4px; font-family: arial;
-             background-color: white; opacity: 80%;
-             color: black; border-color: black;}
-      .menu1{ margin: 5px; font-size: 20px; color: white; text-decoration: none;
-              border: 2px solid; padding-left: 5px; padding-right: 5px;
-              border-radius: 4px 4px 4px 4px; font-family: arial;}
-      .menu2{ margin: 5px; font-size: 20px; color: white; text-decoration: none;
-              border: 2px solid; padding-left: 5px; padding-right: 5px;
-              border-radius: 4px 4px 4px 4px; font-family: arial;}
-      .menu3{ margin: 5px; font-size: 20px; color: white; text-decoration: none;
-              border: 2px solid; padding-left: 5px; padding-right: 5px;
-              border-radius: 4px 4px 4px 4px; font-family: arial;}
-/*end of top menu*/
-      /*end of top menu*/
-      .line{ background-color: white; width: 101%; height: 3px;
-             margin-top: 5px; margin-left: -8px; opacity: 80%;}
+      .grid-container{ 
+        display: grid; 
+        margin-left: 1190px; opacity: 60%;
+        grid-template-columns: 0fr 0fr 0fr 0fr;
+        margin-top: -735px;
+      }
+      .menu{ 
+        margin: 5px; font-size: 20px; color: white; text-decoration: none;
+        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        border-radius: 4px 4px 4px 4px; font-family: arial;
+        background-color: white; opacity: 80%;
+        color: black; border-color: black;
+      }
+      .menu1{
+        margin: 5px; font-size: 20px; color: white; text-decoration: none;
+        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        border-radius: 4px 4px 4px 4px; font-family: arial;
+      }
+      .menu2{ 
+        margin: 5px; font-size: 20px; color: white; text-decoration: none;
+        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        border-radius: 4px 4px 4px 4px; font-family: arial;
+      }
+      .menu3{ 
+        margin: 5px; font-size: 20px; color: white; text-decoration: none;
+        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        border-radius: 4px 4px 4px 4px; font-family: arial;
+      }
+      /*end of top menu*/    
+      .line{ 
+        background-color: white; width: 101%; height: 3px;
+        margin-top: 5px; margin-left: -8px; opacity: 80%;
+      }
 /*middle text*/
-.header{ color: #663c3e; margin-top: 150px; text-align: center; opacity: 80%;
-         font-size: 100px; font-family: arial; font-weight: bold;
-         text-shadow: 5px 1px 11px white;}
-.header1{ color: #e0e0e0; text-align: center;  
-         font-size: 100px; font-family: arial; font-weight: bold;
-         text-shadow: 0px 3px 10px #663c3e;}
+.header{ 
+  color: #663c3e; margin-top: 150px; text-align: center; opacity: 80%;
+  font-size: 100px; font-family: arial; font-weight: bold;
+  text-shadow: 5px 1px 11px white;
+}
+.header1{ 
+  color: #e0e0e0; text-align: center;  
+  font-size: 100px; font-family: arial; font-weight: bold;
+  text-shadow: 0px 3px 10px #663c3e;
+}
 /*end of middle text*/
-         /*bottom menu*/
-        .menu4{ margin-left: 660px; font-size: 30px; color: #663c3e; text-decoration: none;
-                border: 3px solid; font-weight: bold;
-                padding-left: 20px; padding-right: 20px; padding-bottom: 10px; padding-top: 10px;
-                border-radius: 10px 10px 10px 10px; border-color:#663c3e; }
-        .position{ margin-top: 20px; }
-        /*end of bottom menu*/
+      /*bottom menu*/
+      .menu4{
+        margin-left: 660px; font-size: 30px; color: #663c3e; text-decoration: none;
+        border: 3px solid; font-weight: bold;
+        padding-left: 20px; padding-right: 20px; padding-bottom: 10px; padding-top: 10px;
+        border-radius: 10px 10px 10px 10px; border-color:#663c3e; 
+      }
+      .position{ 
+        margin-top: 20px; 
+      }
+      /*end of bottom menu*/
 /*menu hovering*/
-.menu:hover{ background-color: white;
-             color: black; border-color: black;
-             transition-duration: 0.3s;}
-.menu1:hover{ background-color: white; opacity: 80%;
-              color: black; border-color: black;
-              transition-duration: 0.3s;}  
-.menu2:hover{ background-color: white; opacity: 80%;
-              color: black; border-color: black;
-              transition-duration: 0.3s;}   
-.menu3:hover{ background-color: white; opacity: 80%;
-              color: black; border-color: black;
-              transition-duration: 0.3s;}                     
-.menu4:hover{ background-color: #663c3e;
-              color: #e0e0e0;
-              transition-duration: 0.3s;}
+.menu:hover{
+  background-color: white;
+  color: black; border-color: black;
+  transition-duration: 0.3s;
+}
+.menu1:hover{ 
+  background-color: white; opacity: 80%;
+  color: black; border-color: black;
+  transition-duration: 0.3s;
+}  
+.menu2:hover{ 
+  background-color: white; opacity: 80%;
+  color: black; border-color: black;
+  transition-duration: 0.3s;
+}  
+.menu3:hover{ 
+  background-color: white; opacity: 80%;
+  color: black; border-color: black;
+  transition-duration: 0.3s;
+}                  
+.menu4:hover{ 
+  background-color: #663c3e;
+  color: #e0e0e0;
+  transition-duration: 0.3s;
+}
 /*end of menu hovering*/
 
 
