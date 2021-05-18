@@ -1,92 +1,127 @@
-body{background-color: black;}
-/*top menu*/
-      .grid-container{ 
-        display: grid; 
-        margin-left: 1190px; opacity: 60%;
-        grid-template-columns: 0fr 0fr 0fr 0fr;
+body{
+      background-color: black;
+}
+      /*top menu*/
+      nav{
+        background-color: black;
+        height: 55px; margin-top: -19px;
+        position: sticky;
+        top:0;
       }
-      .menu{ 
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
+      ul{  
+        display: grid; 
+        grid-template-columns: 0fr 0fr 0fr 0fr;
+        margin-top: -29px;
+        position: sticky;
+        top: 17px;
+      }
+      li{ 
+        list-style: none;
+        position: relative;
+        left: 1130px; opacity: 60%;
+      }
+      a{
+        margin: 5px; font-size: 20px; color: white;
         border: 2px solid; padding-left: 5px; padding-right: 5px;
         border-radius: 4px 4px 4px 4px;
-        font-family: arial;
+        color: white; 
+        font-family: arial; text-decoration: none;
       }
-      .menu1{
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px; font-family: arial;
-        background-color: white; opacity: 80%;
-        color: black; border-color: black;
-      }
-      .menu2{ 
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px; font-family: arial;
-      }
-      .menu3{ 
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px; font-family: arial;
+      .portfolio{
+        color: black;
+        background-color: white;
       }
       /*end of top menu*/    
       .line{ 
-        background-color: white; width: 101%; height: 3px;
-        margin-top: 5px; margin-left: -8px; opacity: 80%;
+        background-color: white; width: 100%; height: 3px;
+        opacity: 80%;
+        position: sticky;
+        top: 54px;
       }
 /*menu hovering*/
-.menu:hover{
+a:hover{
+  color: black;
+  border-color: black;
+  transition-duration: 0.3s;
   background-color: white;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
-.menu1:hover{ 
-  background-color: white; opacity: 80%;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
-}  
-.menu2:hover{ 
-  background-color: white; opacity: 80%;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
-}  
-.menu3:hover{ 
-  background-color: white; opacity: 80%;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
-}  
 /*end of menu hovering*/
-      /*display grid*/
+      /*placehoder images*/
       .grid-container1{
         display: grid;
         grid-template-columns: 400px 400px 400px;
-        margin-top: 20px; margin-left: 150px;
-        grid-gap: 10px
+        margin-top: 40px; margin-left: 125px;
+        grid-gap: 30px;      
       }
       .grid-item{
-        background-color: white;
-        height: 300px;  
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 300px;
+        transition-duration: 0.3s;
       }
       .grid-item1{
-        background-color: red;
-        height: 300px; 
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 300px;
+        transition-duration: 0.3s; 
       }
       .grid-item2{
-        background-color: green;
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
         height: 300px; 
+        transition-duration: 0.3s;
       }
       .grid-item3{
         grid-column-start: 1;
         grid-column-end: 3;
-        background-color: white;
-        height: 300px; 
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 400px; 
+        transition-duration: 0.3s;
       }
       .grid-item4{
-        background-color: red;
-        height: 300px; 
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 400px; 
+        transition-duration: 0.3s;
+      }
+      .grid-container2{
+        display: grid;
+        grid-template-columns: 615px 615px;
+        margin-top: 30px; margin-left: 125px; margin-bottom: 300px;
+        grid-gap: 30px;        
       }
       .grid-item5{
-        background-color: green;
-        height: 300px; 
-      /*end of display grid*/
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 450px; 
+        transition-duration: 0.3s;
+       }
+      .grid-item6{
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 450px;
+        transition-duration: 0.3s;
+       }
+      /*end of placeholder images*/
+/*place holder images hover*/
+.grid-item:hover, .grid-item1:hover,
+.grid-item2:hover{
+      box-shadow: 0px 7px 10px 1px white;
+      height: 450px;
+}
+.grid-item3:hover,
+.grid-item4:hover{
+      box-shadow: 0px 7px 10px 1px white;
+      height: 600px;
+}
+.grid-item5:hover,
+.grid-item6:hover{
+      box-shadow: 0px 7px 10px 1px white;
+      height: 650px;
+}
+/*end of place holder images hover*/
+
 
 
