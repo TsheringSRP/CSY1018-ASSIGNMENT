@@ -5,42 +5,33 @@ body{ }
   background-repeat: no-repeat;
   height: 815px;
   background-size: 1600px 1000px;
-  margin-top:-80px; margin-left: -10px; margin-right:-8px;
+  margin-top:-70px; margin-left: -10px; margin-right:-8px;
 }
 /*end of picture*/
       /*top menu*/
-      .grid-container{ 
+      ul{  
         display: grid; 
-        margin-left: 1190px; opacity: 60%;
+        margin-left: 1130px; opacity: 60%;
         grid-template-columns: 0fr 0fr 0fr 0fr;
-        margin-top: -735px;
+        margin-top: -738px;
       }
-      .menu{ 
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px; font-family: arial;
-        background-color: white; opacity: 80%;
-        color: black; border-color: black;
+      li{ 
+        list-style: none;
       }
-      .menu1{
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
+      a{
+        font-family: arial; text-decoration: none;
+        margin: 5px; font-size: 20px; color: white;
         border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px; font-family: arial;
+        border-radius: 4px 4px 4px 4px;
       }
-      .menu2{ 
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px; font-family: arial;
-      }
-      .menu3{ 
-        margin: 5px; font-size: 20px; color: white; text-decoration: none;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px; font-family: arial;
+      .home{
+        background-color: white;
+        color: black;
       }
       /*end of top menu*/    
       .line{ 
         background-color: white; width: 101%; height: 3px;
-        margin-top: 5px; margin-left: -8px; opacity: 80%;
+        margin-top: -2px; margin-left: -8px; opacity: 80%;
       }
 /*middle text*/
 .header{ 
@@ -55,40 +46,26 @@ body{ }
 }
 /*end of middle text*/
       /*bottom menu*/
-      .menu4{
+      .menu1{
         margin-left: 660px; font-size: 30px; color: #663c3e; text-decoration: none;
         border: 3px solid; font-weight: bold;
         padding-left: 20px; padding-right: 20px; padding-bottom: 10px; padding-top: 10px;
         border-radius: 10px 10px 10px 10px; border-color:#663c3e; 
       }
-      .position{ 
+      .menu1-position{ 
         margin-top: 20px; 
       }
       /*end of bottom menu*/
 /*menu hovering*/
-.menu:hover{
+a:hover{
+  color: black;
+  border-color: black;
+  transition-duration: 0.3s;
   background-color: white;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
 }
-.menu1:hover{ 
-  background-color: white; opacity: 80%;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
-}  
-.menu2:hover{ 
-  background-color: white; opacity: 80%;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
-}  
-.menu3:hover{ 
-  background-color: white; opacity: 80%;
-  color: black; border-color: black;
-  transition-duration: 0.3s;
-}                  
-.menu4:hover{ 
+.menu1:hover{
   background-color: #663c3e;
-  color: #e0e0e0;
+  color: #e0e0e0; border-color: #663c3e;
   transition-duration: 0.3s;
 }
 /*end of menu hovering*/
