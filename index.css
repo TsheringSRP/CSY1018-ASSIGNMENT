@@ -1,4 +1,4 @@
-body{
+body.index{
   background-color: black;
 }
 /*pictiure*/
@@ -81,25 +81,59 @@ a:hover{
 /*end of menu hovering*/
 
                        /*portfolio css*/
-
+body.portfolio{
+  background-color: #fdac058c;
+}
 /*top menu*/
 nav{
-  background-color: black;
-  height: 55px; margin-top: -19px;
+  background-color: red;
+  height: 55px; margin-top: -1900px;
   position: sticky;
   top:0;
+  width: 101%;
+  margin-left: -8px;
+
 }
+      ul{  
+        margin-top: -100px;
+        position: sticky;
+        top: 17px;
+      }
+      li{ 
+        list-style: none;
+        position: relative; opacity: 60%;
+        left: 1130px;
+      }
+      a{
+        font-family: arial; text-decoration: none;
+        margin: 5px; font-size: 20px; color: white;
+        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        border-radius: 4px 4px 4px 4px;
+      }
+      .line1{ 
+        background-color: white; width: 100%; height: 3px;
+        position: sticky;
+        top: 54px;
+      }
 .portfolio{
   color: black;
   background-color: white;
+}
+.bg{
+  background-color: white;
+  margin-top: 100px;
+  height: 1480px;
+  width: 1310px;
+  margin-left: 100px;
+  border-radius: 15px 15px 15px 15px;
 }
       /*placehoder images*/
       .grid-container1,
       .grid-container2{
         display: grid;
         grid-template-columns: 400px 400px 400px;
-        margin-top: 40px; margin-left: 125px;
-        grid-gap: 30px;      
+        margin-top: 455px; margin-left: 125px;
+        grid-gap: 30px;     
       }
       .grid-item,
       .grid-item1,
@@ -121,22 +155,22 @@ nav{
         background-size: 400px 300px;
       }
       .grid-item{
-        background-image: url(imageholder.jpg);
+        background-image: url(placeholderimage.jpg);
       }
       .grid-item1{
-        background-image: url(imageholder.jpg);
+        background-image: url(placeholderimage.jpg);
       }
       .grid-item2{
-        background-image: url(imageholder.jpg);
+        background-image: url(placeholderimage.jpg);
       }
       .grid-item3{
-        background-image: url(imageholder.jpg);
+        background-image: url(placeholderimage.jpg);
         background-size: 830px 400px;
         grid-column-start: 1;
         grid-column-end: 3;
       }
       .grid-item4{
-        background-image: url(imageholder.jpg);
+        background-image: url(placeholderimage.jpg);
         background-size: 400px 400px;
       }
       .grid-item3, 
@@ -153,6 +187,7 @@ nav{
       .details6{ 
         border-radius: 0 0 10px 10px;
         background-color: #aaa;
+        box-shadow: 0px 0px 4px 0px;
       }
       .details,
       .details1,
@@ -181,18 +216,19 @@ nav{
 /*     detail of images*/
       .grid-container2{
         display: grid;
-        grid-template-columns: 615px 615px;       
+        grid-template-columns: 615px 615px; 
+        margin-top: 30px;      
       }
       .grid-item5,
       .grid-item6{
         height: 450px; 
        }
       .grid-item5{
-        background-image: url(imageholder.jpg);
+        background-image: url(placeholderimage.jpg);
         background-size: 615px 450px;
       }
       .grid-item6{
-        background-image: url(imageholder.jpg);
+        background-image: url(placeholderimage.jpg);
         background-size: 615px 450px;
       }
       /*detail of images*/
@@ -216,7 +252,7 @@ nav{
 .grid-item4:hover, 
 .grid-item5:hover,
 .grid-item6:hover{
-      box-shadow: 0px 7px 10px 1px white;
+      box-shadow: 0px 1px 6px -2px;
       height: 450px;
 }
 .grid-item3:hover,
@@ -228,6 +264,9 @@ nav{
       height: 650px;
 }
 /*end of place holder images hover*/
+.foot{
+  height: 100px;
+}
 
 
 
