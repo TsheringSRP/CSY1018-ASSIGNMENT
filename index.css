@@ -21,7 +21,7 @@ body.index{
       }
       li{ 
         list-style: none;
-        position: relative; opacity: 60%;
+        position: relative; opacity: 80%;
         left: 1130px;
       }
       a{
@@ -42,13 +42,13 @@ body.index{
         top: 54px;
       }
 /*middle text*/
-.header{ 
+.welcome{ 
   color: #663c3e; 
   position: relative; top: 200px; text-align: center;
   font-size: 100px; font-family: arial; font-weight: bold;
   text-shadow: 5px 1px 11px white;
 }
-.header1{ 
+.website{ 
   color: #e0e0e0; text-align: center;  
   font-size: 100px; font-family: arial; font-weight: bold;
   text-shadow: 0px 3px 10px #663c3e;
@@ -96,19 +96,9 @@ nav{
 }
       ul{  
         margin-top: -100px;
-        position: sticky;
-        top: 17px;
       }
-      li{ 
-        list-style: none;
-        position: relative; opacity: 60%;
-        left: 1130px;
-      }
-      a{
-        font-family: arial; text-decoration: none;
-        margin: 5px; font-size: 20px; color: white;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px;
+      li.port{ 
+        opacity:100%; 
       }
       .line1{ 
         background-color: white; width: 100%; height: 3px;
@@ -120,7 +110,9 @@ nav{
   background-color: white;
 }
 .bg{
-  background-color: white;
+  background-image:url(HillView.gif);
+  background-repeat: no-repeat;
+  background-size: 1310px 1480px;
   margin-top: 100px;
   height: 1480px;
   width: 1310px;
@@ -186,7 +178,7 @@ nav{
       .details5,
       .details6{ 
         border-radius: 0 0 10px 10px;
-        background-color: #aaa;
+        background-color: #ddd;
         box-shadow: 0px 0px 4px 0px;
       }
       .details,
@@ -252,7 +244,7 @@ nav{
 .grid-item4:hover, 
 .grid-item5:hover,
 .grid-item6:hover{
-      box-shadow: 0px 1px 6px -2px;
+      box-shadow: 0px 2px 6px 0px;
       height: 450px;
 }
 .grid-item3:hover,
@@ -265,7 +257,7 @@ nav{
 }
 /*end of place holder images hover*/
 .foot{
-  height: 100px;
+  height: 300px;
 }
 
 
