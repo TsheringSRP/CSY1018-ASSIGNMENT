@@ -28,9 +28,11 @@ body.index{
         font-family: arial; text-decoration: none;
         margin: 5px; font-size: 20px; color: white;
         border: 2px solid; padding-left: 5px; padding-right: 5px;
-        border-radius: 4px 4px 4px 4px;
+        border-radius: 4px;
       }
-      .home{
+      .home,
+      .portfolio,
+      .contact{
         background-color: white;
         color: black;
       }
@@ -63,7 +65,7 @@ body.index{
         font-size: 30px; color: #663c3e; text-decoration: none;
         border: 3px solid; font-weight: bold;
         padding-left: 20px; padding-right: 20px; padding-bottom: 10px; padding-top: 10px;
-        border-radius: 10px 10px 10px 10px; border-color:#663c3e;
+        border-radius: 10px; border-color:#663c3e;
       }
       /*end of bottom menu*/
 /*menu hovering*/
@@ -88,28 +90,28 @@ body.portfolio{
 /*top menu*/
 nav{
   background-color: red;
-  height: 55px; margin-top: -1900px;
+  height: 55px;
   position: sticky;
   top:0;
   width: 101%;
   margin-left: -8px;
-
 }
-      ul{  
+nav.port{
+  margin-top: -1900px; 
+}
+      ul.port{  
         margin-top: -100px;
       }
       li.port{ 
         opacity:100%; 
       }
+/*end of top menu*/
       .line1{ 
         background-color: white; width: 100%; height: 3px;
         position: sticky;
         top: 54px;
       }
-.portfolio{
-  color: black;
-  background-color: white;
-}
+/*background-image*/
 .bg{
   background-image:url(HillView.gif);
   background-repeat: no-repeat;
@@ -118,14 +120,15 @@ nav{
   height: 1480px;
   width: 1310px;
   margin-left: 100px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
 }
+/*background-image*/
       /*placehoder images*/
       .grid-container1,
       .grid-container2{
         display: grid;
         grid-template-columns: 400px 400px 400px;
-        margin-top: 455px; margin-left: 125px;
+        margin-top: 457px; margin-left: 125px;
         grid-gap: 30px;     
       }
       .grid-item,
@@ -136,7 +139,7 @@ nav{
       .grid-item5,
       .grid-item6{
         background-color: #ddd;
-        border-radius: 10px 10px 10px 10px;
+        border-radius: 10px;
         height: 300px;
         transition-duration: 0.5s;
         display: grid;
@@ -260,6 +263,118 @@ nav{
 .foot{
   height: 300px;
 }
+
+               /*contact css*/
+
+body.contact{
+  background-color: black;
+}
+/*background-pictiure*/
+.pic-contact{
+  background-image: url(HillView.gif);
+  background-repeat: no-repeat;
+  height: 815px; opacity: 60%;
+  background-size: 1600px 1000px;
+  margin-top:-70px; margin-left: -10px; margin-right:-8px;
+  margin-bottom: -800px;
+}
+/*background picture*/
+      /*top menu*/
+      nav.cont{
+        margin-top: -11px;
+       background-color: red;
+      }
+      ul.cont{  
+        margin-top: -35px;
+      }
+      li.cont{ 
+        opacity: 100%;
+      }
+      /*end of top menu*/    
+      .line{ 
+        background-color: white; width: 100%; height: 3px;
+        opacity: 80%;
+        margin-top: -2px;
+        position: sticky;
+        top: 54px;
+      }
+/*columns*/
+.grid-container3{
+  display: grid;
+  grid-template-columns: 300px 1172px;
+  grid-gap: 15px;
+}
+.grid-item7,
+.grid-item8{
+  background-color: black;
+}
+.grid-item7{
+position: relative;
+top: 69px; left: 12px;
+height: 640px; 
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+}
+.grid-item8{
+position: relative;
+top: 70px; left: 19px;
+height: 500px;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+/*columns*/
+        /*text inside columns*/
+        .text{
+        color: white;
+        position: relative;
+        left: 70px;
+        top: 10px;
+        font-family: arial;
+        text-decoration: underline;
+        }
+        .text1{
+        color: white;
+        position: relative;
+        left: 70px;
+        top: 10px;
+        font-family: arial;
+        }
+        /*text inside columns*/
+/*form*/
+.main{
+  width: 40%;
+  position: relative;
+  left: 100px;
+  color: white;
+}
+form{
+  opacity: 100%;
+  position: relative;
+  left: 20px;
+}
+label{
+  font-size: 20px;
+  font-family: sans-serif;
+  position: relative;
+  left: 10px;
+}
+#box{
+  margin-left: 10px;
+  height: 20px; width: 60%;
+  border: 2px solid;
+}
+#box1{
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#mf{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/*end of form*/
+
+
 
 
 
