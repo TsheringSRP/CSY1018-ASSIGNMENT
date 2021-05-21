@@ -21,14 +21,19 @@ body.index{
       }
       li{ 
         list-style: none;
-        position: relative; opacity: 80%;
+        position: relative;
+        opacity: 80%;
         left: 1130px;
       }
-      a{
+        a{
         font-family: arial; text-decoration: none;
-        margin: 5px; font-size: 20px; color: white;
-        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        font-size: 20px; color: white;
+        border: 2px solid;
+        margin: 5px;
+        color: white;
         border-radius: 4px;
+        height: 20px;
+        padding-left: 5px; padding-right: 5px;
       }
       .home,
       .portfolio,
@@ -41,7 +46,7 @@ body.index{
         background-color: white; width: 100%; height: 3px;
         opacity: 80%;
         position: sticky;
-        top: 54px;
+        top: 56px;
       }
 /*middle text*/
 .welcome{ 
@@ -90,7 +95,7 @@ body.portfolio{
 /*top menu*/
 nav{
   background-color: red;
-  height: 55px;
+  height: 57px;
   position: sticky;
   top:0;
   width: 101%;
@@ -103,14 +108,9 @@ nav.port{
         margin-top: -100px;
       }
       li.port{ 
-        opacity:100%; 
+        opacity:90%; 
       }
 /*end of top menu*/
-      .line1{ 
-        background-color: white; width: 100%; height: 3px;
-        position: sticky;
-        top: 54px;
-      }
 /*background-image*/
 .bg{
   background-image:url(HillView.gif);
@@ -122,7 +122,7 @@ nav.port{
   margin-left: 100px;
   border-radius: 15px;
 }
-/*background-image*/
+/*end of background-image*/
       /*placehoder images*/
       .grid-container1,
       .grid-container2{
@@ -162,8 +162,7 @@ nav.port{
       .grid-item3{
         background-image: url(placeholderimage.jpg);
         background-size: 830px 400px;
-        grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column: 1 / 3;
       }
       .grid-item4{
         background-image: url(placeholderimage.jpg);
@@ -273,84 +272,98 @@ body.contact{
 .pic-contact{
   background-image: url(HillView.gif);
   background-repeat: no-repeat;
-  height: 815px; opacity: 60%;
+  height: 815px;
   background-size: 1600px 1000px;
   margin-top:-70px; margin-left: -10px; margin-right:-8px;
   margin-bottom: -800px;
+  opacity: 60%
 }
-/*background picture*/
+/*end of background picture*/
       /*top menu*/
       nav.cont{
-        margin-top: -11px;
+       margin-top: -11px;
        background-color: red;
       }
       ul.cont{  
         margin-top: -35px;
       }
       li.cont{ 
-        opacity: 100%;
+        opacity: 90%;
       }
-      /*end of top menu*/    
-      .line{ 
-        background-color: white; width: 100%; height: 3px;
-        opacity: 80%;
-        margin-top: -2px;
-        position: sticky;
-        top: 54px;
-      }
+      /*end of top menu*/
 /*columns*/
 .grid-container3{
   display: grid;
   grid-template-columns: 300px 1172px;
   grid-gap: 15px;
 }
-.grid-item7,
-.grid-item8{
+.grid-item7{
   background-color: black;
 }
 .grid-item7{
-position: relative;
-top: 69px; left: 12px;
-height: 640px; 
-background-color: rgba(0, 0, 0, 0.5);
-border-radius: 20px;
+  position: relative;
+  top: 69px; left: 12px;
+  height: 640px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
+/*contact logo*/
+#fbicon{
+  position: relative;
+  left: 100px;
+  font-size: 25px;
+  border: none;
+}
+#igicon{
+  position: relative;
+  left: 90px;
+  border:none;
+}
+/*end of contact logo*/
 .grid-item8{
-position: relative;
-top: 70px; left: 19px;
-height: 500px;
-border-radius: 20px;
-background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(HillView.gif);
+  background-size: 1172px 640px;
+  position: relative;
+  top: 70px; left: 19px;
+  height: 640px;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px 0;
 }
-/*columns*/
+/*end of columns*/
         /*text inside columns*/
         .text{
-        color: white;
-        position: relative;
-        left: 70px;
-        top: 10px;
-        font-family: arial;
-        text-decoration: underline;
+          opacity: 90%;
+          color: #fff;
+          position: relative;
+          left: 85px;
+          top: 10px;
+          font-family: helvetica;
         }
         .text1{
-        color: white;
-        position: relative;
-        left: 70px;
-        top: 10px;
-        font-family: arial;
+          opacity: 90%;
+          color: white;
+          position: relative;
+          left: 120px;
+          top: 40px;
+          font-family: sans-serif;
         }
-        /*text inside columns*/
+        /*end of text inside columns*/
 /*form*/
 .main{
   width: 40%;
   position: relative;
+  top: 40px;
   left: 100px;
-  color: white;
+  color: black;
+  border-radius: 30px;
+  box-shadow: 0 2px 3px 0;
 }
 form{
-  opacity: 100%;
+  opacity: 90%;
   position: relative;
-  left: 20px;
+  left: 80px;
+  top: 50px;
+  height: 460px;
 }
 label{
   font-size: 20px;
@@ -373,9 +386,14 @@ label{
   margin-left: 10px;
 }
 /*end of form*/
-
-
-
+/*contact hover*/
+#fbicon:hover{
+  color: blue;
+}
+#igicon:hover{
+  color: red;
+}
+/*end of contact hover*/
 
 
 
