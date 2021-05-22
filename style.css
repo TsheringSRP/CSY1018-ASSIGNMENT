@@ -37,7 +37,8 @@ body.index{
       }
       .home,
       .portfolio,
-      .contact{
+      .contact,
+      .cv{
         background-color: white;
         color: black;
       }
@@ -100,13 +101,8 @@ nav{
   top:0;
   width: 101%;
   margin-left: -8px;
-}
-nav.port{
   margin-top: -1900px; 
 }
-      ul.port{  
-        margin-top: -100px;
-      }
       li.port{ 
         opacity:90%; 
       }
@@ -128,7 +124,7 @@ nav.port{
       .grid-container2{
         display: grid;
         grid-template-columns: 400px 400px 400px;
-        margin-top: 457px; margin-left: 125px;
+        margin-top: 380px; margin-left: 125px;
         grid-gap: 30px;     
       }
       .grid-item,
@@ -268,24 +264,9 @@ nav.port{
 body.contact{
   background-color: black;
 }
-/*background-pictiure*/
-.pic-contact{
-  background-image: url(HillView.gif);
-  background-repeat: no-repeat;
-  height: 815px;
-  background-size: 1600px 1000px;
-  margin-top:-70px; margin-left: -10px; margin-right:-8px;
-  margin-bottom: -800px;
-  opacity: 60%
-}
-/*end of background picture*/
       /*top menu*/
       nav.cont{
-       margin-top: -11px;
-       background-color: red;
-      }
-      ul.cont{  
-        margin-top: -35px;
+       margin-top:0px;
       }
       li.cont{ 
         opacity: 90%;
@@ -432,7 +413,77 @@ left: 630px;
 }
 /*end of contact hover*/
 
+                       /*cv css*/
 
+body.cv{
+  background-color: black;
+}
+/*pictiure*/
+/*end of picture*/
+      /*top menu*/
+      nav.c{
+       margin-top: -20px;
+      }
+      li.c{ 
+        opacity: 90%;
+      }
+      /*end of top menu*/
+/*columns*/
+.grid-container4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 0px;
+  margin-left: 3px;
+}
+.grid-item9,
+.grid-item10,
+.grid-item11,
+.grid-item12,
+.grid-item13,
+.grid-item14,
+.grid-item15{
+  height: 300px;
+}
+.grid-item9{
+  grid-area: 1 / 1 / 4 / 2;
+  margin-top: 50px;
+  height: 870px;
+  width: 70%;
+  margin-left: 115px;
+  background-color: red;
+  border-radius: 50px 0 0 50px;
+}
+.grid-item12{
+  grid-area: 1 / 4 / 4 / 5;
+  background-color: red;
+  height: 870px;
+  width: 70%;
+
+  border-radius: 0 50px 50px 0;
+}
+.grid-item10{
+  grid-area: 1 / 2 / 3 / 3;
+  background-color: #eee;
+
+  height: 570px;
+
+}
+
+.grid-item14{
+  grid-area: 3 / 2 / 4 / 4;
+  background-color: #bbb;
+}
+.grid-item11{
+  background-color: #ddd;
+
+  height: 230px;
+}
+.grid-item13{
+  background-color: #ccc;
+  height: 250px;
+
+}
+/*end of columns*/
 
 
 
