@@ -450,12 +450,12 @@ body.cv{
   height: 870px;
   width: 70%;
   margin-left: 115px;
-  background-color: red;
+  background-color: lightgreen;
   border-radius: 50px 0 0 50px;
 }
 .grid-item12{
   grid-area: 1 / 4 / 4 / 5;
-  background-color: red;
+  background-color: orange;
   height: 870px;
   width: 70%;
   margin-top: 50px;
@@ -490,10 +490,20 @@ body.cv{
   margin-top: 80px;
   height: 230px;
 }
+.work{
+}
 .grid-item13{
   background-color: #ccc;
   height: 250px;
   margin-top: 0px;
+}
+#fbi,
+#igi{
+  border: none;
+  position: relative;
+  top: 200px;
+  margin: 0px;
+  left: 840px;
 }
 /*end of columns*/
         /*texts*/
@@ -508,8 +518,19 @@ body.cv{
         .name{
           color: red;
         }
-
-
+.edu,
+.work,
+.about{
+  text-align: center;
+  background-color: skyblue; 
+  margin-top: 0px;
+}
+.proper{
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 5px 0px 3px white;
+  background-color: rgba(255, 0, 0, 0.6);
+}
 
 
 
