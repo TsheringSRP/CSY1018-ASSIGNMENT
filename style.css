@@ -458,33 +458,56 @@ body.cv{
   background-color: red;
   height: 870px;
   width: 70%;
-
+  margin-top: 50px;
   border-radius: 0 50px 50px 0;
 }
 .grid-item10{
   grid-area: 1 / 2 / 3 / 3;
   background-color: #eee;
-
+  margin-top: 50px;
   height: 570px;
-
+  background-image: url(idbg.png);
+  background-size: 375px 570px;
 }
-
+.pp{
+  background-image: url(me.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100px 100px; 
+  height: 100px;
+  width: 100px;
+  margin-left: 130px;
+  margin-top: 100px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-bottom: 50px;
+}
 .grid-item14{
   grid-area: 3 / 2 / 4 / 4;
   background-color: #bbb;
 }
 .grid-item11{
   background-color: #ddd;
-
+  margin-top: 80px;
   height: 230px;
 }
 .grid-item13{
   background-color: #ccc;
   height: 250px;
-
+  margin-top: 0px;
 }
 /*end of columns*/
+        /*texts*/
+        .name,
+        .dob,
+        .email,
+        .phone{
+          font-family: arial;
+          margin-left: 10px;
 
+        }
+        .name{
+          color: red;
+        }
 
 
 
