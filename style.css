@@ -1,39 +1,35 @@
 body.index{
+  margin:0;
+  padding: 0;
   background-color: black;
-}
-/*pictiure*/
-.pic{
   background-image: url(HillView.gif);
   background-repeat: no-repeat;
-  height: 815px; opacity: 80%;
-  background-size: 1600px 1000px;
-  margin-top:-70px; margin-left: -10px; margin-right:-8px;
-  margin-bottom: -800px;
+  height: 670px;
+  width: 100%;
+  opacity: 80%;
+  background-size: 100% 754px;
 }
-/*end of picture*/
 /*top menu*/
       ul{  
-        display: grid; 
-        grid-template-columns: 0fr 0fr 0fr 0fr;
-        margin-top: -29px;
-        position: sticky;
-        top: 17px;
-      }
-      li{ 
+        margin-top: -40px;
+        margin-right: 20px;
         list-style: none;
-        position: relative;
-        opacity: 80%;
-        left: 1130px;
+        float: right;
+        }
+      li{ 
+        border: 2px solid;
+        color: white;
+        margin: 3px;
+        border-radius: 4px;
+        display: inline-block;
       }
         a{
-        font-family: arial; text-decoration: none;
-        font-size: 20px; color: white;
-        border: 2px solid;
-        margin: 5px;
+        font-family: arial;
+        text-decoration: none;
+        font-size: 20px;
         color: white;
-        border-radius: 4px;
-        height: 20px;
-        padding-left: 5px; padding-right: 5px;
+        padding-left: 5px; 
+        padding-right: 5px;
       }
       .home,
       .portfolio,
@@ -42,51 +38,64 @@ body.index{
         background-color: white;
         color: black;
       }
+      .home1,
+      .portfolio1,
+      .contact1,
+      .cv1{
+        color: black;
+      }
       /*end of top menu*/    
       .line{ 
-        background-color: white; width: 100%; height: 3px;
+        background-color: white;
+        width: 100%;
+        height: 3px;
         opacity: 80%;
-        position: sticky;
-        top: 56px;
+        margin-top: 50px;
       }
 /*middle text*/
 .welcome{ 
   color: #663c3e; 
-  position: relative; top: 200px; text-align: center;
   font-size: 100px; font-family: arial; font-weight: bold;
   text-shadow: 5px 1px 11px white;
+  text-align: center;
+  margin-top: 130px;
 }
 .website{ 
   color: #e0e0e0; text-align: center;  
   font-size: 100px; font-family: arial; font-weight: bold;
   text-shadow: 0px 3px 10px #663c3e;
-  position: relative;
-  top:190px;
+  text-align: center;
 }
 /*end of middle text*/
-      /*bottom menu*/
-      .menu1{
-        position: relative;
-        left: 650px; top: 220px;
-        font-size: 30px; color: #663c3e; text-decoration: none;
-        border: 3px solid; font-weight: bold;
-        padding-left: 20px; padding-right: 20px; padding-bottom: 10px; padding-top: 10px;
-        border-radius: 10px; border-color:#663c3e;
-      }
-      /*end of bottom menu*/
 /*menu hovering*/
-a:hover{
-  color: black;
+li:hover{
   border-color: black;
   background-color: white;
   transition-duration: 0.2s;
 }
-.menu1:hover{
-  background-color: #663c3e;
-  color: #e0e0e0; border-color: #663c3e;
-  transition-duration: 0.2s;
+a:hover{
+  color: black;
 }
 /*end of menu hovering*/
+/*responsive*/
+        @media screen and (max-width: 600px){
+          body.index{
+            width: 100%;
+            height: 700px;
+            background-size: 100% 754px;
+          }
+            ul{  
+            margin-right: 80px;
+          }
+          .welcome{
+            font-size: 80px;
+            margin-top: 100px;
+          }
+          .website{
+            font-size: 60px;
+          }
+        }
+/*end of responsive*/
 
                        /*portfolio css*/
 
@@ -94,7 +103,7 @@ body.portfolio{
   background-color: #fdac058c;
 }
 /*top menu*/
-nav{
+/*nav.port{
   background-color: red;
   height: 57px;
   position: sticky;
@@ -105,7 +114,7 @@ nav{
 }
       li.port{ 
         opacity:90%; 
-      }
+      }*/
 /*end of top menu*/
 /*background-image*/
 .bg{
@@ -442,7 +451,7 @@ body.cv{
 .grid-item13,
 .grid-item14,
 .grid-item15{
-  height: 300px;
+  height: 320px;
 }
 .grid-item9{
   grid-area: 1 / 1 / 4 / 2;
@@ -464,10 +473,11 @@ body.cv{
 .grid-item10{
   grid-area: 1 / 2 / 3 / 3;
   background-color: #eee;
-  margin-top: 50px;
+  margin-top: 30px;
   height: 570px;
   background-image: url(idbg.png);
   background-size: 375px 570px;
+  border-radius: 10px 10px 0 0;
 }
 .pp{
   background-image: url(me.jpg); 
@@ -513,10 +523,12 @@ body.cv{
         .phone{
           font-family: arial;
           margin-left: 10px;
+          text-shadow: 0 0 5px white;
 
         }
         .name{
           color: red;
+          text-shadow: 0 0 5px white;
         }
 .edu,
 .work,
@@ -527,8 +539,8 @@ body.cv{
 }
 .proper{
   text-align: center;
-  margin-top: 50px;
-  text-shadow: 5px 0px 3px white;
+  margin-top: 57px;
+  text-shadow: 3px 0px 3px white;
   background-color: rgba(255, 0, 0, 0.6);
 }
 
