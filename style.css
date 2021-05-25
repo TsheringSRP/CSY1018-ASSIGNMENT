@@ -9,9 +9,13 @@ body.index{
   background-size: 100% 754px;
 }
 /*top menu*/
+nav{
+  background-color: #37204d;
+  height: 50px;
+}
       ul{  
-        margin-top: -40px;
-        margin-right: 20px;
+        margin-top: 9px;
+        margin-right: 30px;
         list-style: none;
         float: right;
         }
@@ -21,6 +25,7 @@ body.index{
         margin: 3px;
         border-radius: 4px;
         display: inline-block;
+        opacity: 90%;
       }
       a{
         font-family: arial;
@@ -49,7 +54,7 @@ body.index{
         width: 100%;
         height: 3px;
         opacity: 80%;
-        margin-top: 50px;
+        margin-top: 0px;
       }
       label #bar{
         color: white;
@@ -97,27 +102,36 @@ a:hover{
             background-size: 100% 736px;
           }
           ul{  
-            margin-top: -205px;
-            width: 93%;
-            transition: 0.3s;
+            background-color: #4b3156;
+            margin-top: 53px;
+            width: 90%;
+            height: 490px;
             text-align: center;
             position: fixed;
-            right: -110%;
-            background-color: black;
-            margin-right: -10px;
+            right: 95%;
+            border-radius: 5px;
+            transition: 0.2s;
           }
           li{
             display: block;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin: 0;
             width: 110%;
-            border: none;
-            margin-left: -44px;
+            border-bottom: 2px solid;
+            border-color: black;
+            margin-left: -40px;
+          }
+          a{
+            font-size: 30px;
           }
       .home,
       .portfolio,
       .contact,
       .cv{
-        background-color: #663c3e;
-        color: black;
+        background-color: #bbb;
+        border-bottom: 2px solid;
+        border-color: white;
       }
       .home1,
       .portfolio1,
@@ -127,26 +141,21 @@ a:hover{
       }
           .welcome{
             font-size: 70px;
-            margin-top: 40px;
-            transition: 0.3s;
+            margin-top: 70px;
+            transition: 0.2s;
           }
           .website{
-            font-size: 50px;
+            font-size: 70px;
             margin-bottom: 100PX;
           }
           label #bar{
             display:block;
-            float: right;
+            margin-top: 10px;
           }
           #check:checked ~ ul{
-            top: 255px;
-            right: 0;
-          }
-          #check:checked ~ .welcome{
-            margin-top: 150px;
+            right: -7%;
           }
         }
-
 
           @media screen and (max-width: 413px){
           body.index{
@@ -170,26 +179,36 @@ body.portfolio{
 }
 /*top menu*/
 nav.port{
-  background-color: red;
-  height: 57px;
-  top:0;
+  margin-top: -100px;
   width: 101%;
   margin-left: -8px;
-  margin-top: -1900px; 
+  position: fixed;
 }
+      ul.port{
+        margin-top: -91px;
+        position: fixed;
+        right: -17px;
+      }
       li.port{ 
         opacity:90%; 
       }
 /*end of top menu*/
+      .line1{ 
+        background-color: white;
+        width: 100%;
+        height: 3px;
+        opacity: 80%;
+        position: fixed;
+        top: 50px;
+      }
 /*background-image*/
 .bg{
   background-image:url(HillView.gif);
   background-repeat: no-repeat;
-  background-size: 1310px 1480px;
+  background-size: 100% 1440px;
   margin-top: 100px;
-  height: 1480px;
-  width: 1310px;
-  margin-left: 100px;
+  height: 1440px;
+  width: 100%;
   border-radius: 15px;
 }
 /*end of background-image*/
@@ -197,9 +216,10 @@ nav.port{
       .grid-container1,
       .grid-container2{
         display: grid;
-        grid-template-columns: 400px 400px 400px;
-        margin-top: 380px; margin-left: 125px;
-        grid-gap: 30px;     
+        grid-template-columns: 0.33fr 0.33fr 0.33fr;
+        margin-top: -1425px; 
+        grid-gap: 30px;  
+        margin-left: 15px;   
       }
       .grid-item,
       .grid-item1,
@@ -213,12 +233,11 @@ nav.port{
         height: 300px;
         transition-duration: 0.5s;
         display: grid;
-        background-repeat: no-repeat;
       }
       .grid-item,
       .grid-item1,
       .grid-item2{
-        background-size: 400px 300px;
+        background-size: 100% 300px;
       }
       .grid-item{
         background-image: url(placeholderimage.jpg);
@@ -231,12 +250,12 @@ nav.port{
       }
       .grid-item3{
         background-image: url(placeholderimage.jpg);
-        background-size: 830px 400px;
+        background-size: 100% 400px;
         grid-column: 1 / 3;
       }
       .grid-item4{
         background-image: url(placeholderimage.jpg);
-        background-size: 400px 400px;
+        background-size: 100% 400px;
       }
       .grid-item3, 
       .grid-item4{
@@ -253,6 +272,7 @@ nav.port{
         border-radius: 0 0 10px 10px;
         background-color: #ddd;
         box-shadow: 0px 0px 4px 0px;
+        background-repeat: no-repeat;
       }
       .details,
       .details1,
@@ -281,7 +301,7 @@ nav.port{
 /*     detail of images*/
       .grid-container2{
         display: grid;
-        grid-template-columns: 615px 615px; 
+        grid-template-columns: 0.495fr 0.495fr; 
         margin-top: 30px;      
       }
       .grid-item5,
@@ -290,11 +310,11 @@ nav.port{
        }
       .grid-item5{
         background-image: url(placeholderimage.jpg);
-        background-size: 615px 450px;
+        background-size: 100% 450px;
       }
       .grid-item6{
         background-image: url(placeholderimage.jpg);
-        background-size: 615px 450px;
+        background-size: 100% 450px;
       }
       /*detail of images*/
       .details5,
@@ -332,6 +352,39 @@ nav.port{
 .foot{
   height: 300px;
 }
+      label #bar1{
+        position: fixed;
+        color: white;
+        font-size: 35px;
+        margin-top: -92px;
+        cursor: pointer;
+        display: none;
+        right: 20px;
+      }
+      #check1{
+        display: none;
+      }
+
+/*responsive*/
+        @media screen and (max-width: 600px){
+          body.portfolio{
+            background-color: orange;
+          }
+          ul.port{  
+            top: 142px;
+            right: 0%;
+          }
+          .line1{
+            right: 4px;
+          }
+          label #bar1{
+            display:block;
+          }
+          #check1:checked ~ .line{
+            display: none;
+          }
+        }
+/*end of responsive*/
 
                /*contact css*/
 
@@ -339,9 +392,6 @@ body.contact{
   background-color: black;
 }
       /*top menu*/
-      nav.cont{
-       margin-top:0px;
-      }
       li.cont{ 
         opacity: 90%;
       }
@@ -495,9 +545,6 @@ body.cv{
 /*pictiure*/
 /*end of picture*/
       /*top menu*/
-      nav.c{
-       margin-top: -20px;
-      }
       li.c{ 
         opacity: 90%;
       }
