@@ -482,25 +482,42 @@ li.port:hover{
                /*contact css*/
 
 body.contact{
-  background-color: black;
+  background-color: gray;
 }
       /*top menu*/
+      nav.cont{
+        position: fixed;
+        top: 0px;
+        width: 101%;
+        margin-left: -9px;
+      }
+      ul.cont{
+        margin-top: 9px;
+        margin-right: 45px;
+      }
       li.cont{ 
         opacity: 90%;
       }
       /*end of top menu*/
+      .line2{
+        background-color: white;
+        width: 100%;
+        height: 3px;
+        opacity: 80%;
+        position: fixed;
+        top: 50px;
+      }
 /*columns*/
 .grid-container3{
   display: grid;
-  grid-template-columns: 300px 1172px;
+  grid-template-columns: 0.5fr 1fr;
   grid-gap: 15px;
 }
 .grid-item7{
   background-color: black;
 }
 .grid-item7{
-  position: relative;
-  top: 69px; left: 12px;
+  margin-top: 70px;
   height: 640px; 
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -510,109 +527,71 @@ body.contact{
   background-repeat: no-repeat;
   background-size: 40px 40px;
   height: 40px; width: 40px;
-  margin-left: 118px;
+  margin-left: 210px;
   margin-top: 15px;
   border-radius: 50px;
-  opacity: 70%;
 }
 /*contact logo*/
 #fbicon{
-  position: relative;
-  left: 100px;
   font-size: 25px;
   border: none;
+  margin-left: 200px;
 }
-#igicon{
-  position: relative;
-  left: 90px;
-  border:none;
-}
+
 /*end of contact logo*/
 .grid-item8{
   background-image: url(HillView.gif);
   background-size: 1172px 640px;
-  position: relative;
-  top: 70px; left: 19px;
   height: 640px;
+  margin-top: 70px;
   border-radius: 20px;
   box-shadow: 0 3px 5px 0;
 }
 /*end of columns*/
         /*text inside columns*/
         .text{
-          opacity: 90%;
+          margin-left: 180px;
           color: #fff;
-          position: relative;
-          left: 85px;
-          top: 10px;
           font-family: helvetica;
         }
-        .text1,
-        .text2{
-          opacity: 90%;
-          color: white;
-          position: relative;
-          left: 120px;
-          top: 40px;
+        .text1{
+          margin-top: 30px;
+          margin-left: 120px;
+          color: white;;
           font-family: sans-serif;
           text-shadow: 3px 0px 3px red;
         }
-        .text2{
-          top: -15px;
-          left: 570px;
-        }
         /*end of text inside columns*/
 /*form*/
-.main{
-  width: 40%;
-  position: relative;
-  top: 40px;
-  left: 100px;
-  height: 500px;
-  color: black;
-  border-radius: 30px;
-  box-shadow: 0 2px 3px 0;
-}
 form{
-  opacity: 90%;
-  position: relative;
-  left: 80px;
-  top: 0px;
+  margin-top: 50px;
   height: 460px;
+  margin-left: 100px;
 }
 label{
   font-size: 20px;
   font-family: sans-serif;
   position: relative;
   left: 10px;
+  color: white;
 }
 #message{
-  position: relative;
-  left: 430px;
-  top: -340px;
   box-shadow: 0 0px 3px 0px;
+  margin-left: 10px;
 }
 #box{
   margin-left: 10px;
-  height: 20px; width: 60%;
+  height: 20px; width: 40%;
   border: 2px solid;
 }
 #submit{
-position: relative;
-top: -130px;
-left: 10px;
-}
-#submit1{
-position: relative;
-top: -340px;
-left: 630px;
-}
-#submit,
-#submit1{
   border: 1px solid;
- border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 #mf{
+  color: #ccc;
   margin-top: 10px;
   margin-left: 10px;
 }
