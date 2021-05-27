@@ -205,33 +205,39 @@ nav.port{
         opacity: 80%;
         position: fixed;
         top: 50px;
-        left: -1px;
+        left: 7px;
       }
 /*background-image*/
 .bg{
   background-image:url(HillView.gif);
   background-repeat: no-repeat;
-  background-size: 100% 1440px;
+  background-size: 100% 985px;
   margin-top: 100px;
-  height: 1440px;
+  height: 985px;
   width: 100%;
   border-radius: 15px;
 }
 /*end of background-image*/
       /*columns*/
-      .grid-container1,
-      .grid-container2{
+      .grid-container1{
         display: grid;
-        grid-template-columns: 0.33fr 0.33fr 0.33fr;
-        margin-top: -1425px; 
-        grid-gap: 30px;  
-        margin-left: 15px;   
+        grid-template-columns: 0.33fr 0.33fr 0.35fr;
+        margin-top: 100px; 
+        grid-gap: 30px;     
+      }
+      .grid-container1{
+        background-image:url(HillView.gif);
+        background-repeat: no-repeat;
+        background-size: 100% 995px;
+        height: 995px;
+        width: 100%;
+        border-radius: 15px;
+        width: 100%;
       }
       .grid-item,
       .grid-item1,
       .grid-item2,
-      .grid-item3,
-      .grid-item4, 
+      .grid-item3, 
       .grid-item5,
       .grid-item6{
         background-color: #ddd;
@@ -239,6 +245,8 @@ nav.port{
         height: 300px;
         transition-duration: 0.5s;
         display: grid;
+        margin-top: 22px;
+        box-shadow: 0px 2px 6px 0px;
       }
       .grid-item,
       .grid-item1,
@@ -247,34 +255,34 @@ nav.port{
       }
       .grid-item{
         background-image: url(placeholderimage.jpg);
+        margin-left: 20px;
       }
       .grid-item1{
         background-image: url(placeholderimage.jpg);
+        border-radius: 10px 0 0 10px;
       }
       .grid-item2{
         background-image: url(placeholderimage.jpg);
+        height: 950px;
+        margin-left: -20px;
+        margin-right: 18px;
+        border-radius: 0;
+        border-radius: 0 10px 10px 0px;
       }
       .grid-item3{
         background-image: url(placeholderimage.jpg);
         background-size: 100% 400px;
         grid-column: 1 / 3;
+        margin-left: 20px;
+        border-radius: 10px 0 0 10px;
       }
-      .grid-item4{
-        background-image: url(placeholderimage.jpg);
-        background-size: 100% 400px;
-      }
-      .grid-item3, 
-      .grid-item4{
-        height: 400px; 
+      .grid-item3{
+        margin-top: -515px;
+        height: 485px; 
       }
 /*     detail of columns*/
       .details,
-      .details1,
-      .details2,
-      .details3,
-      .details4,
-      .details5,
-      .details6{ 
+      .details1{ 
         width: 100%;
         border-radius: 0 0 10px 10px;
         background-color: #ddd;
@@ -282,8 +290,7 @@ nav.port{
         background-repeat: no-repeat;
       }
       .details,
-      .details1,
-      .details2{ 
+      .details1{ 
         margin-top: 300px;
       }
       .details{ 
@@ -292,72 +299,44 @@ nav.port{
       .details1{ 
         background-image: url(placeholdertext400x150.png);
       }
-      .details2{ 
-        background-image: url(placeholdertext400x150.png);
-      }
-      .details3,
-      .details4{
-        margin-top: 400px;
-      }
-      .details3{ 
-        background-image: url(placeholdertext830x200.png); 
-      }
-      .details4{  
-        background-image: url(placeholdertext400x200.png);
-      }
-/*     detail of columns*/
       .grid-container2{
         display: grid;
-        grid-template-columns: 0.495fr 0.495fr; 
-        margin-top: 30px;      
+        grid-template-columns: 0.3fr 0.3fr; 
+        margin-top: 50px;  
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);  
+        height: 450px; 
+        margin-left: 0px; 
       }
       .grid-item5,
       .grid-item6{
-        height: 450px; 
+        height: 350px; 
+        margin-top: 45px;
+        margin-left: 50px;
        }
       .grid-item5{
         background-image: url(placeholderimage.jpg);
-        background-size: 100% 450px;
+        background-size: 100% 300px;
       }
       .grid-item6{
         background-image: url(placeholderimage.jpg);
-        background-size: 100% 450px;
+        background-size: 100% 300px;
       }
-      /*detail of columns*/
-      .details5,
-      .details6{
-        margin-top: 450px;
-      } 
-      .details5{
-        background-image: url(placeholdertext615x200.png);
-      }
-      .details6{  
-        background-image: url(placeholdertext615x200.png);
-      }
-      /*end of detail of columns*/
       /*end of placeholder images
 /*columns hover*/
 .grid-item:hover,
-.grid-item1:hover,
-.grid-item2:hover, 
-.grid-item3:hover, 
-.grid-item4:hover, 
-.grid-item5:hover,
-.grid-item6:hover{
+.grid-item1:hover{
       box-shadow: 0px 2px 6px 0px;
       height: 450px;
 }
-.grid-item3:hover,
-.grid-item4:hover{
-      height: 600px;
-}
-.grid-item5:hover,
-.grid-item6:hover{
-      height: 650px;
-}
 /*end of columns hover*/
+#fbiconp,
+#igiconp{
+  margin-left: 50%;
+  border-radius: 50%;
+}
 .foot{
-  height: 300px;
+  height: 500px;
 }
       label #bar1{
         color: white;
@@ -449,11 +428,6 @@ nav.port{
       .details4{ 
         margin-top: 200px;
         background-size: 100% 120px;
-      }
-      .details5,
-      .details6{ 
-        margin-top: 200px;
-        background-size: 100% 130px;
       }
 
 .grid-item:hover,
