@@ -679,7 +679,7 @@ label{
                        /*cv css*/
 
 body.cv{
-  background-color: black;
+  background-color: gray;
 }
       /*top menu*/
 nav.c{
@@ -711,11 +711,12 @@ nav.c{
 
 /*grid-columns*/
 .grid-container4{
-  background-color: red;
+  background-color: #37204d;
   height: 950px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 50px;
+  border-radius: 20px;
 }
 .grid-item9,
 .grid-item10,
@@ -725,14 +726,14 @@ nav.c{
 .grid-item14{
   height: 320px;
 }
-/*green*/
+/*skyblue*/
 .grid-item9{
   grid-area: 1 / 1 / 4 / 2;
   margin-top: 50px;
   height: 870px;
   width: 82%;
-  margin-left: 70px;
-  background-color: lightgreen;
+  margin-left: 20%;
+  background-color: skyblue;
   border-radius: 50px 0 0 50px;
 }
 /*blue*/
@@ -751,16 +752,16 @@ nav.c{
   background-size: 100% 100px; 
   height: 100px;
   width: 26%;
-  margin-left: 130px;
+  margin-left:36%;
   margin-top: 100px;
   border-radius: 50%;
   border: 2px solid;
   margin-bottom: 50px;
 }
-/*orange*/
+/*lightblue*/
 .grid-item12{
   grid-area: 1 / 4 / 4 / 5;
-  background-color: orange;
+  background-color: lightblue;
   height: 870px;
   width: 80%;
   margin-top: 50px;
@@ -786,8 +787,8 @@ nav.c{
   margin-top: -60px;
 }
 #fbi{
-  margin-left: 86%;
-  margin-top: 30%;
+  margin-left: 2%;
+  margin-top: 225px;
 }
 #igi{
   margin-left: -1%;
@@ -822,6 +823,7 @@ nav.c{
           background-color: rgba(255, 0, 0, 0.6);
         }
         /*end of texts*/
+
       /*hamburger icon*/
       label #bar3{
         color: white;
@@ -834,72 +836,149 @@ nav.c{
         display: none;
       }
       /*end of hamburger icon*/
+.footc{
+  height: 30px;
+}
 
 /*-------------------------------------------------------------------*/
 
 /*responsive*/
 
+@media screen and (max-width: 1276px){
+        .email{
+          font-size: 13px;
+        }
+
+
+@media screen and (max-width: 1260px){
+        .edu{
+          font-size: 20px;
+        }
+}
+
+@media screen and (max-width: 1056px){
+        .edu{
+          font-size: 15px;
+        }
+}
+
+@media screen and (max-width: 980px){
+        .proper{
+          font-size: 19px;
+        }
+}
+
+@media screen and (max-width: 850px){
+        .proper{
+          font-size: 15px;
+        }
+        .edu{
+          font-size: 13px;
+        }
+}
+
+@media screen and (max-width: 772px){
+        .work,
+        .about{
+          font-size: 20px;
+        }
+#fbi{
+  margin-left: 2%;
+  margin-top: 250px;
+}
+#igi{
+  margin-left: -1%;
+}
+}
+
+@media screen and (max-width: 734px){
+        .edu{
+          font-size: 10px;
+        }
+        .work{
+          font-size: 18px;
+        }
+}
+
+@media screen and (max-width: 672px){
+        .proper{
+          font-size: 11px;
+        }
+}
+
+@media screen and (max-width: 639px){
+        .edu{
+          font-size: 8px;
+        }
+        .work{
+          font-size: 15px;
+        }
+}
+
 @media screen and (max-width: 600px){
+
+ body.cv{
+  background-color: gray;
+ }
           ul.c{  
             margin-top: 45px;
             right: 100%;
           }
+
 .grid-container4{
   margin-top: 50px;
   height: 1200px;
-  background-color: red;
+  background-color: purple;
   grid-template-columns: 0.6fr 0.375fr 0fr 0fr;
 }
-/*green*/
+/*skyblue*/
 .grid-item9{
   grid-area: 2 / 1 / 3 / 2;
   margin-top: 5px;
   height: 300px;
   width: 85%;
-  margin-left: 15px;
-  border-radius: 50px 0 0 50px;
+  margin-left: 4%;
+  border-radius: 0 0 0 50px;
 }
 /*blue*/
 .grid-item10{
   grid-area: 1 / 1 / 2 / 2;
   background-color: #eee;
-  margin-left: 15px;
+  margin-left: 4%;
   height: 500px;
   background-size: 100% 570px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 0 0 0;
   margin-top: 30px;
 }
-/*orange*/
+/*lightblue*/
 .grid-item12{
   grid-area: 3 / 2 / 4 / 3;
-  background-color: orange;
   height: 300px;
   width: 117%;
   margin-top: -321px;
-  margin-left: -35px;
-  border-radius: 0 50px 50px 0;
+  margin-left: -18%;
+  border-radius: 0 0 50px 0;
 }
 /*gray-1*/
 .grid-item11{
   grid-area: 1 /  2 / 2 / 3;
   margin-top: 30px;
-/*  width: 130%;*/
   height: 245px;
-  margin-left: 10px;
+  margin-left: 5%;
+  border-radius: 0 10px 0 0;
 }
 /*gray-2*/
 .grid-item13{
   grid-area: 2 / 2 / 3 / 3;
   margin-top: -267px;
-/*  width: 130%;*/
   height: 245px;
-  margin-left: 10px;
+  margin-left: 5%;
 }
 /*gray-3*/
 .grid-item14{
   grid-area: 4 / 1 / 5 / 2;
   background-color: #bbb;
-  margin-left: 100px;
+  margin-left: 28%;
   height: 300px;
   width: 105%;
   margin-top: -20px;
@@ -912,5 +991,19 @@ nav.c{
           #check3:checked ~ ul.c{
             right: -8%;
           }
+        .edu{
+          font-size: 9px;
+          border-radius: 0 10px 0 0;
+        }
+        .proper{
+          font-size: 15px;
+        }
+#fbi{
+  margin-left: 2%;
+  margin-top: 225px;
+}
+#igi{
+  margin-left: -1%;
+}
 }
 
