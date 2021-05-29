@@ -81,8 +81,8 @@ nav{
         color: white;
         font-size: 35px;
         float: right;
-        margin-top: -42px;
-        margin-right: 30px;
+        margin-top: -35px;
+        margin-right: 37px;
         cursor: pointer;
         display: none;
       }
@@ -126,7 +126,6 @@ a:hover{
             padding-bottom: 30px;
             margin: 0;
             width: 100%;
-            border-bottom: 2px solid;
             border-color: black;
             margin-left: 0px;
           }
@@ -138,7 +137,6 @@ a:hover{
       .contact,
       .cv{
         background-color: #bbb;
-        border-bottom: 2px solid;
         border-color: white;
       }
       .home1,
@@ -158,7 +156,7 @@ a:hover{
           }
           label #bar{
             display:block;
-            margin-top: 10px;
+            margin-top: 8px;
           }
           #check:checked ~ ul{
             right: -8%;
@@ -185,12 +183,12 @@ a:hover{
 
 /*end of responsive*/
 
-/*..............................................................*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
                        /*portfolio css*/
 
 body.portfolio{
-  background-color: #fdac058c;
+  background-color: gray;
 }
 
 /*top menu*/
@@ -328,7 +326,7 @@ nav.port{
         grid-template-columns: 0.3fr 0.3fr; 
         margin-top: 50px;  
         width: 100%;
-        background-color: darkred; 
+        background-color: rgba(0, 0, 0, 0.5); 
         height: 450px; 
         margin-left: 0px; 
       }
@@ -384,7 +382,7 @@ nav.port{
 /*responsive*/
         @media screen and (max-width: 600px){
           body.portfolio{
-            background-color: orange;
+            background-color: purple;
           }
           ul.port{  
             top: 60px;
@@ -392,7 +390,7 @@ nav.port{
             transition: 0.2s;
           }
           .line1{
-            margin-left: -10px;
+            margin-left: -8px;
           }
           label #bar1{
             position: fixed;
@@ -468,7 +466,7 @@ nav.port{
 
 /*end of responsive*/
 
-/*.............................................................*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
                /*contact css*/
 
@@ -491,6 +489,7 @@ body.contact{
         opacity: 90%;
       }
       /*end of top menu*/
+
       .line2{
         background-color: white;
         width: 100%;
@@ -500,6 +499,7 @@ body.contact{
         top: 50px;
         left: -1px;
       }
+
 /*columns*/
 .grid-container3{
   display: grid;
@@ -524,14 +524,14 @@ body.contact{
   margin-left: 44%;
   border-radius: 50px;
 }
-/*contact logo*/
+/*social media icons*/
 #fbicon{
   font-size: 25px;
   border: none;
   margin-left: 42%;
 }
+/*end of social media icons*/
 
-/*end of contact logo*/
 .grid-item8{
   background-image: url(HillView.gif);
   background-size: 100% 640px;
@@ -541,6 +541,7 @@ body.contact{
   box-shadow: 0 3px 5px 0;
 }
 /*end of columns*/
+
         /*text inside columns*/
         .text{
           background-color: #aaa;
@@ -556,6 +557,7 @@ body.contact{
           text-shadow: 3px 0px 3px red;
         }
         /*end of text inside columns*/
+
 /*form*/
 form{
   margin-top: 50px;
@@ -590,6 +592,7 @@ label{
   margin-left: 10px;
 }
 /*end of form*/
+
 /*contact hover*/
 #fbicon:hover{
   color: blue;
@@ -602,6 +605,8 @@ label{
   box-shadow: 0 0 9px 2px white;
 }
 /*end of contact hover*/
+      
+      /*hamburger icon*/
       label #bar2{
         color: white;
         font-size: 35px;
@@ -612,6 +617,9 @@ label{
       #check2{
         display: none;
       }
+      /*end of hamburger icon*/
+
+/*--------------------------------------------------------------------*/
 
 /*responsive*/
 
@@ -644,7 +652,7 @@ label{
           #check2:checked ~ ul.cont{
             right: -8%;
           }
-/*columns*/
+
 .grid-container3{
   grid-template-columns: 1fr;
 }
@@ -655,9 +663,7 @@ label{
   margin-top: 0px;
   height: 300px; 
 }
-/*end of columns*/
 
-/*form*/
 #message{
   width: 50%;
 }
@@ -665,128 +671,246 @@ label{
  width: 50%;
 }
 }
+
 /*end of responsive*/
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
                        /*cv css*/
 
 body.cv{
   background-color: black;
 }
-/*pictiure*/
-/*end of picture*/
       /*top menu*/
+nav.c{
+  margin-top: -8px;
+  width: 101%;
+  margin-left: -8px;
+  position: fixed;
+}
+      ul.c{
+        margin-top: -22px;
+        position: fixed;
+        right: -17px;
+      }
+
       li.c{ 
         opacity: 90%;
       }
       /*end of top menu*/
-/*columns*/
+
+      .line3{
+        background-color: white;
+        width: 100%;
+        height: 3px;
+        opacity: 80%;
+        position: fixed;
+        top: 50px;
+        left: -1px;
+      }
+
+/*grid-columns*/
 .grid-container4{
+  background-color: red;
+  height: 950px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 0px;
-  margin-left: 3px;
+  margin-top: 50px;
 }
 .grid-item9,
 .grid-item10,
 .grid-item11,
 .grid-item12,
 .grid-item13,
-.grid-item14,
-.grid-item15{
+.grid-item14{
   height: 320px;
 }
+/*green*/
 .grid-item9{
   grid-area: 1 / 1 / 4 / 2;
   margin-top: 50px;
   height: 870px;
-  width: 70%;
-  margin-left: 115px;
+  width: 82%;
+  margin-left: 70px;
   background-color: lightgreen;
   border-radius: 50px 0 0 50px;
 }
-.grid-item12{
-  grid-area: 1 / 4 / 4 / 5;
-  background-color: orange;
-  height: 870px;
-  width: 70%;
-  margin-top: 50px;
-  border-radius: 0 50px 50px 0;
-}
+/*blue*/
 .grid-item10{
   grid-area: 1 / 2 / 3 / 3;
   background-color: #eee;
   margin-top: 30px;
   height: 570px;
   background-image: url(idbg.png);
-  background-size: 375px 570px;
+  background-size: 100% 570px;
   border-radius: 10px 10px 0 0;
 }
 .pp{
   background-image: url(me.jpg); 
   background-repeat: no-repeat;
-  background-size: 100px 100px; 
+  background-size: 100% 100px; 
   height: 100px;
-  width: 100px;
+  width: 26%;
   margin-left: 130px;
   margin-top: 100px;
   border-radius: 50%;
   border: 2px solid;
   margin-bottom: 50px;
 }
-.grid-item14{
-  grid-area: 3 / 2 / 4 / 4;
-  background-color: #bbb;
+/*orange*/
+.grid-item12{
+  grid-area: 1 / 4 / 4 / 5;
+  background-color: orange;
+  height: 870px;
+  width: 80%;
+  margin-top: 50px;
+  border-radius: 0 50px 50px 0;
 }
+/*gray-1*/
 .grid-item11{
   background-color: #ddd;
   margin-top: 80px;
-  height: 230px;
+  height: 240px;
 }
-.work{
-}
+/*gray-2*/
 .grid-item13{
+  grid-area: 2 / 3 / 3 / 4;
   background-color: #ccc;
-  height: 250px;
-  margin-top: 0px;
+  height: 260px;
+  margin-top: -40px;
 }
-#fbi,
+/*gray-3*/
+.grid-item14{
+  grid-area: 3 / 2 / 4 / 4;
+  background-color: #bbb;
+  margin-top: -60px;
+}
+#fbi{
+  margin-left: 86%;
+  margin-top: 30%;
+}
 #igi{
-  border: none;
-  position: relative;
-  top: 200px;
-  margin: 0px;
-  left: 840px;
+  margin-left: -1%;
 }
-/*end of columns*/
+/*end of grid-columns*/
+
         /*texts*/
         .name,
         .dob,
         .email,
         .phone{
+          font-size: 1rem;
           font-family: arial;
           margin-left: 10px;
           text-shadow: 0 0 5px white;
-
         }
         .name{
           color: red;
           text-shadow: 0 0 5px white;
         }
-.edu,
-.work,
-.about{
-  text-align: center;
-  background-color: skyblue; 
-  margin-top: 0px;
+        .edu,
+        .work,
+        .about{
+          text-align: center;
+          background-color: skyblue; 
+          margin-top: 0px;
+        }
+        .proper{
+          text-align: center;
+          margin-top: 57px;
+          text-shadow: 3px 0px 3px white;
+          background-color: rgba(255, 0, 0, 0.6);
+        }
+        /*end of texts*/
+      /*hamburger icon*/
+      label #bar3{
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+        display: none;
+        right: 20px;
+      }
+      #check3{
+        display: none;
+      }
+      /*end of hamburger icon*/
+
+/*-------------------------------------------------------------------*/
+
+/*responsive*/
+
+@media screen and (max-width: 600px){
+          ul.c{  
+            margin-top: 45px;
+            right: 100%;
+          }
+.grid-container4{
+  margin-top: 50px;
+  height: 1200px;
+  background-color: red;
+  grid-template-columns: 0.6fr 0.375fr 0fr 0fr;
 }
-.proper{
-  text-align: center;
-  margin-top: 57px;
-  text-shadow: 3px 0px 3px white;
-  background-color: rgba(255, 0, 0, 0.6);
+/*green*/
+.grid-item9{
+  grid-area: 2 / 1 / 3 / 2;
+  margin-top: 5px;
+  height: 300px;
+  width: 85%;
+  margin-left: 15px;
+  border-radius: 50px 0 0 50px;
 }
-
-
-
-
+/*blue*/
+.grid-item10{
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #eee;
+  margin-left: 15px;
+  height: 500px;
+  background-size: 100% 570px;
+  border-radius: 10px 10px 0 0;
+  margin-top: 30px;
+}
+/*orange*/
+.grid-item12{
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: orange;
+  height: 300px;
+  width: 117%;
+  margin-top: -321px;
+  margin-left: -35px;
+  border-radius: 0 50px 50px 0;
+}
+/*gray-1*/
+.grid-item11{
+  grid-area: 1 /  2 / 2 / 3;
+  margin-top: 30px;
+/*  width: 130%;*/
+  height: 245px;
+  margin-left: 10px;
+}
+/*gray-2*/
+.grid-item13{
+  grid-area: 2 / 2 / 3 / 3;
+  margin-top: -267px;
+/*  width: 130%;*/
+  height: 245px;
+  margin-left: 10px;
+}
+/*gray-3*/
+.grid-item14{
+  grid-area: 4 / 1 / 5 / 2;
+  background-color: #bbb;
+  margin-left: 100px;
+  height: 300px;
+  width: 105%;
+  margin-top: -20px;
+}
+          label #bar3{
+            position: fixed;
+            margin-top: 0px;
+            display:block;
+          }
+          #check3:checked ~ ul.c{
+            right: -8%;
+          }
+}
 
