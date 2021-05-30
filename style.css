@@ -4,21 +4,24 @@ body.index{
   background-color: black;
   background-image: url(HillView.gif);
   background-repeat: no-repeat;
-  height: 670px;
   width: 100%;
   background-size: 100% 754px;
 }
 
 /*top menu*/
 nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
   background-color: #37204d;
   height: 50px;
 }
       ul{  
-        margin-top: 9px;
-        margin-right: 30px;
+        position: fixed; 
+        margin-top: -14px;
+        right: 30px;
         list-style: none;
-        float: right;
+
         }
       li{ 
         border: 2px solid;
@@ -36,6 +39,7 @@ nav{
         padding-left: 5px; 
         padding-right: 5px;
       }
+
       .home,
       .portfolio,
       .contact,
@@ -54,24 +58,28 @@ nav{
       /*end of top menu*/    
 
       .line{ 
+        position: fixed;
         background-color: white;
         width: 100%;
         height: 3px;
         opacity: 80%;
-        margin-top: 0px;
+        margin-top: -150px;
       }
 
 /*middle text*/
 .welcome{ 
+  margin-top: 200px;
   color: #663c3e; 
-  font-size: 100px; font-family: arial;
+  font-size: 100px; 
+  font-family: arial;
   font-weight: bold;
   text-shadow: 5px 1px 11px white;
   text-align: center;
-  margin-top: 150px;
+
 }
 .website{ 
-  color: #e0e0e0; text-align: center;  
+  color: #e0e0e0; 
+  text-align: center;  
   font-size: 100px; font-family: arial; 
   font-weight: bold;
   text-shadow: 0px 3px 10px #663c3e;
@@ -79,14 +87,20 @@ nav{
 }
 /*end of middle text*/
 
-      label #bar{
-        color: white;
-        font-size: 35px;
-        float: right;
-        margin-top: -35px;
-        margin-right: 20px;
+      .barr{
+        position: fixed;
+        top: 10px;
+        margin-left: 85%;
+        margin-top: 0px;
         cursor: pointer;
         display: none;
+      }
+      label #bar{
+        height: 4px;
+        background-color: white;
+        width: 35px;
+        margin: 5px;
+        border-radius: 1px;
       }
       #check{
         display: none;
@@ -107,18 +121,19 @@ a:hover{
 
 /*responsive*/
         @media screen and (max-width: 600px){
+
           body.index{
             width: 100%;
             background-size: 100% 736px;
           }
           ul{  
             background-color: #4b3156;
-            margin-top: 53px;
+            margin-top: 28px;
             width: 100%;
-            height: 490px;
+            height: 491px;
             text-align: center;
             position: fixed;
-            right: 100%;
+            right:105%;
             border-radius: 5px;
             transition: 0.2s;
           }
@@ -134,6 +149,21 @@ a:hover{
           a{
             font-size: 30px;
           }
+
+.line{
+  margin-top: -150px;
+}
+
+          .barr{
+            display: block;
+          }
+          label #bar{
+            display: block;
+          }
+          #check:checked ~ ul {
+            right: 0%;
+          }
+
       .home,
       .portfolio,
       .contact,
@@ -149,24 +179,16 @@ a:hover{
       }
           .welcome{
             font-size: 70px;
-            margin-top: 70px;
-            transition: 0.2s;
           }
           .website{
             font-size: 70px;
             margin-bottom: 100PX;
-          }
-          label #bar{
-            display:block;
-            margin-top: 8px;
-          }
-          #check:checked ~ ul{
-            right: -8%;
-          }
         }
           li:hover{
             background-color: #ccc;
           }
+  }
+
           @media screen and (max-width: 413px){
           body.index{
             width: 100%;
@@ -175,8 +197,10 @@ a:hover{
           }
           .welcome{
             font-size: 50px;
-            margin-top: 90px;
-            transition: 0.3s;
+            margin-top: 140px;
+          }
+          .line{
+          margin-top: -90px;
           }
           li:hover{
             background-color: #ccc;
@@ -191,40 +215,28 @@ a:hover{
 
 body.portfolio{
   background-color: gray;
+  margin:0;
+  padding: 0;
 }
 
-/*top menu*/
-nav.port{
-  margin-top: -100px;
-  width: 101%;
-  margin-left: -8px;
-  position: fixed;
+ul.port{
+  right: 13px;
 }
-      ul.port{
-        margin-top: -14px;
+
+      .line1{
         position: fixed;
-        right: -17px;
-      }
-      li.port{ 
-        opacity:90%; 
-      }
-/*end of top menu*/
-
-      .line1{ 
         background-color: white;
         width: 100%;
         height: 3px;
         opacity: 80%;
-        position: fixed;
-        top: 50px;
-        left: 7px;
-      }
+        margin-top: -30px
+       }
 
       /*columns top*/
       .grid-container1{
         display: grid;
         grid-template-columns: 0.33fr 0.33fr 0.35fr;
-        margin-top: 100px; 
+        margin-top: 80px; 
         grid-gap: 30px;     
       }
       .grid-container1{
@@ -352,24 +364,11 @@ nav.port{
 .foot{
   height: 500px;
 }
-
-      /*hamburger icons*/
-      label #bar1{
-        color: white;
-        font-size: 35px;
-        cursor: pointer;
-        display: none;
-        right: 20px;
-      }
-      #check1{
-        display: none;
-      }
-      /*end of hamburer icons*/
        
 /*columns hover*/
 .grid-item:hover,
 .grid-item1:hover{
-      box-shadow: 0px 0 5px 2px yellow;
+      box-shadow: 0px 0 5px 2px purple;
       height: 450px;
 }
       .grid-item5:hover,
@@ -386,22 +385,11 @@ nav.port{
           body.portfolio{
             background-color: purple;
           }
-          ul.port{  
-            top: 60px;
-            right: 100%;
-            transition: 0.2s;
+
+          ul.port{
+            right: 105%;
           }
-          .line1{
-            margin-left: -8px;
-          }
-          label #bar1{
-            position: fixed;
-            margin-top: 8px;
-            display:block;
-          }
-          #check1:checked ~ ul.port{
-            right: -8%;
-          }
+
 .grid-container1{
   grid-template-columns: 0.3fr 0.3fr 0.36fr;
 }
@@ -473,33 +461,18 @@ nav.port{
                /*contact css*/
 
 body.contact{
+  margin: 0;
+  padding: 0;
   background-color: gray;
 }
-      /*top menu*/
-      nav.cont{
-        position: fixed;
-        top: 0px;
-        width: 101%;
-        margin-left: -9px;
-      }
-      ul.cont{
-        position: fixed;
-        top: 0px;
-        right: 0px;
-      }
-      li.cont{ 
-        opacity: 90%;
-      }
-      /*end of top menu*/
 
-      .line2{
+      .line2{ 
+        position: fixed;
         background-color: white;
         width: 100%;
         height: 3px;
         opacity: 80%;
-        position: fixed;
-        top: 50px;
-        left: -1px;
+        margin-top: 50px;
       }
 
 /*columns*/
@@ -553,8 +526,8 @@ body.contact{
         }
         .text1{
           margin-top: 30px;
-          margin-left: 120px;
-          color: white;;
+          margin-left: 20%;
+          color: white;
           font-family: sans-serif;
           text-shadow: 3px 0px 3px red;
         }
@@ -607,19 +580,6 @@ label{
   box-shadow: 0 0 9px 2px white;
 }
 /*end of contact hover*/
-      
-      /*hamburger icon*/
-      label #bar2{
-        color: white;
-        font-size: 35px;
-        cursor: pointer;
-        display: none;
-        right: 20px;
-      }
-      #check2{
-        display: none;
-      }
-      /*end of hamburger icon*/
 
 /*--------------------------------------------------------------------*/
 
@@ -628,13 +588,6 @@ label{
 @media screen and (max-width: 600px){
   body.contact{
     background-color: lightgray;
-  }
-  nav.cont{
-    margin-left: -10px;
-  }
-  ul.cont{
-    top:0px;
-    right: 110%
   }
   #message{
     width: 40%;
@@ -645,15 +598,6 @@ label{
   #fbicon{
     margin-left: 40%;
   }
-
-          label #bar2{
-            position: fixed;
-            margin-top: 8px;
-            display:block;
-          }
-          #check2:checked ~ ul.cont{
-            right: -8%;
-          }
 
 .grid-container3{
   grid-template-columns: 1fr;
@@ -681,26 +625,13 @@ label{
                        /*cv css*/
 
 body.cv{
+  margin: 0;
+  padding: 0;
   background-color: gray;
 }
-      /*top menu*/
-nav.c{
-  margin-top: -70px;
-  width: 101%;
-  margin-left: -8px;
-  position: fixed;
+ul.c{
+  right: 13px;
 }
-      ul.c{
-        margin-top: -14px;
-        position: fixed;
-        right: -17px;
-      }
-
-      li.c{ 
-        opacity: 90%;
-      }
-      /*end of top menu*/
-
       .line3{
         background-color: white;
         width: 100%;
@@ -769,18 +700,40 @@ nav.c{
   margin-top: 50px;
   border-radius: 0 50px 50px 0;
 }
+#prs{
+  text-align: center;
+  font-family: arial;
+}
 /*gray-1*/
 .grid-item11{
   background-color: #ddd;
   margin-top: 80px;
   height: 240px;
 }
+.maintable{
+  border: 2px solid;
+  align-content: center;
+}
+
+tr,td{
+ border: 2px solid black; 
+ text-align: center;
+}
+#ps{
+  font-family: arial;
+  text-align: center;
+}
+
 /*gray-2*/
 .grid-item13{
   grid-area: 2 / 3 / 3 / 4;
   background-color: #ccc;
   height: 260px;
   margin-top: -40px;
+}
+#we{
+  text-align: center;
+  font-family: arial;
 }
 /*gray-3*/
 .grid-item14{
@@ -826,18 +779,6 @@ nav.c{
         }
         /*end of texts*/
 
-      /*hamburger icon*/
-      label #bar3{
-        color: white;
-        font-size: 35px;
-        cursor: pointer;
-        display: none;
-        right: 20px;
-      }
-      #check3{
-        display: none;
-      }
-      /*end of hamburger icon*/
 .footc{
   height: 30px;
 }
@@ -850,7 +791,7 @@ nav.c{
         .email{
           font-size: 13px;
         }
-
+}
 
 @media screen and (max-width: 1260px){
         .edu{
@@ -891,6 +832,14 @@ nav.c{
 #igi{
   margin-left: -1%;
 }
+tr,td{
+ font-size: 10px;
+}
+#ps{
+  font-family: arial;
+  text-align: center;
+  font-size: 13px;
+}
 }
 
 @media screen and (max-width: 734px){
@@ -902,7 +851,7 @@ nav.c{
         }
 }
 
-@media screen and (max-width: 672px){
+@media screen and (max-width: 675px){
         .proper{
           font-size: 11px;
         }
@@ -922,14 +871,9 @@ nav.c{
  body.cv{
   background-color: gray;
  }
- nav.c{
-  margin-top: -70px;
+ ul.c{
+  right: 105%;
  }
-          ul.c{  
-            margin-top: 45px;
-            right: 100%;
-          }
-
 .grid-container4{
   margin-top: 70px;
   height: 1200px;
@@ -988,14 +932,6 @@ nav.c{
   width: 105%;
   margin-top: -20px;
 }
-          label #bar3{
-            position: fixed;
-            margin-top: 8px;
-            display:block;
-          }
-          #check3:checked ~ ul.c{
-            right: -8%;
-          }
         .edu{
           font-size: 9px;
           border-radius: 0 10px 0 0;
@@ -1012,39 +948,13 @@ nav.c{
 }
 }
 
+@media screen and (max-width: 414px){
+  tr,td{
+    font-size: 7px;
+  }
+}
+
 /*end of responsive*/
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-body.sitereport{
-  background-color: gray;
-}
-      /*top menu*/
-nav.site{
-  margin-top: -8px;
-  width: 101%;
-  margin-left: -8px;
-  position: fixed;
-}
-      ul.site{
-        margin-top: -22px;
-        position: fixed;
-        right: -17px;
-      }
-
-      li.site{ 
-        opacity: 90%;
-      }
-      /*end of top menu*/
-
-      .line3{
-        background-color: white;
-        width: 100%;
-        height: 3px;
-        opacity: 80%;
-        position: fixed;
-        top: 50px;
-        left: -1px;
-      }
-
 
