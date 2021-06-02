@@ -21,7 +21,6 @@ nav{
         margin-top: -14px;
         right: 30px;
         list-style: none;
-
         }
       li{ 
         border: 2px solid;
@@ -41,10 +40,10 @@ nav{
       }
 
       .home,
-      .portfolio,
-      .contact,
-      .cv,
-      .sitereport{
+      .portfoli,
+      .contac,
+      .c,
+      .siterepor{
         background-color: white;
         color: black;
       }
@@ -96,10 +95,10 @@ nav{
         display: none;
       }
       label #bar{
-        height: 4px;
+        height: 3px;
         background-color: white;
-        width: 35px;
-        margin: 5px;
+        width: 30px;
+        margin: 6px;
         border-radius: 1px;
       }
       #check{
@@ -124,7 +123,7 @@ a:hover{
 
           body.index{
             width: 100%;
-            background-size: 100% 736px;
+            background-size: 100% 755px;
           }
           ul{  
             background-color: #4b3156;
@@ -165,16 +164,18 @@ a:hover{
           }
 
       .home,
-      .portfolio,
-      .contact,
-      .cv{
+      .portfoli,
+      .contac,
+      .c,
+      .siterepor{
         background-color: #bbb;
         border-color: white;
       }
       .home1,
       .portfolio1,
       .contact1,
-      .cv1{
+      .cv1,
+      .sitereport1{
         color: black;
       }
           .welcome{
@@ -381,6 +382,7 @@ ul.port{
 /*-------------------------------------------------------------*/
 
 /*responsive*/
+
         @media screen and (max-width: 600px){
           body.portfolio{
             background-color: purple;
@@ -629,9 +631,6 @@ body.cv{
   padding: 0;
   background-color: gray;
 }
-ul.c{
-  right: 13px;
-}
       .line3{
         background-color: white;
         width: 100%;
@@ -709,15 +708,6 @@ ul.c{
   background-color: #ddd;
   margin-top: 80px;
   height: 240px;
-}
-.maintable{
-  border: 2px solid;
-  align-content: center;
-}
-
-tr,td{
- border: 2px solid black; 
- text-align: center;
 }
 #ps{
   font-family: arial;
@@ -871,9 +861,6 @@ tr,td{
  body.cv{
   background-color: gray;
  }
- ul.c{
-  right: 105%;
- }
 .grid-container4{
   margin-top: 70px;
   height: 1200px;
@@ -948,9 +935,9 @@ tr,td{
 }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 415px){
   tr,td{
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 
@@ -958,3 +945,52 @@ tr,td{
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
+/*sitereport css*/
+
+body.sitereport{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/*Reports*/
+.topic1,
+.topic2{
+  margin: 15px;
+  text-align: center;
+}
+.topic1{
+  background-color: red;
+  margin-top: 70px;
+  height: 100px;
+}
+
+p#paragraph1{
+  font-family: sans-serif;
+/*  color: white;*/
+}
+
+.topic2{
+  background-color: green;
+  margin-top: 70px;
+  height: 300px;
+}
+h1#heading2{
+  text-align: center;
+  font-family: arial;
+  text-decoration: underline;
+  color: darkred;
+}
+p#paragraph2{
+  font-family: sans-serif;
+/*  color: white;*/
+}
+
+
+h1#heading1,
+h1#heading2{
+  text-align: center;
+  font-family: arial;
+  text-decoration: underline;
+  color: darkred;
+}
