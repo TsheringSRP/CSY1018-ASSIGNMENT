@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>My Contact</title>
-    <link rel="stylesheet" type="text/css" href="file:///D:/WEB_ASSIGNMENT/fontawesome-free-5.15.3-web/css/all.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,15 +12,15 @@
     <nav>
         <!-- hamburger icon -->
         <input type="checkbox" id="check">
-        <label for="check">
-            <div class="barr">
-                <div id="bar"></div>
-                <div id="bar"></div>
-                <div id="bar"></div>
+        <div class="hamburger">
+            <label for="check" id="bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
-        </label>
         <!-- end of hamburger icon -->
-        <ul>
+        <ul class="cont">
 	        <li><a href="index.html">Home</a></li>
 	        <li><a href="portfolio.html">Portfolio</a></li>
 	        <li class="contac"><a class="contact1">Contact</a></li>
@@ -38,11 +37,11 @@
     	<div class="grid-item7">  
     	    <h1 class="text">Contact</h1>
     	        <!-- socialmedia icons -->
-    		    <a href="https://www.facebook.com/profile.php?id=100009532814099">
-    		 	<i class="fab fa-facebook f" id="fbicon"></i>
+    		    <a href="https://www.facebook.com/profile.php?id=100009532814099" id="fbico">
+    		 	facebook
     		    </a> 
-     		    <a href="https://www.instagram.com/tsheringcaerpa/">
-     		 	<i class="fab fa-instagram" id="igicon"></i>
+     		    <a href="https://www.instagram.com/tsheringcaerpa/" id="igico">
+     		 	instagram
      		    </a>
      		    <div class="me"></div>
      		<!--end of social media icons -->
@@ -55,30 +54,36 @@
     			    <input type="text" name="firstname" id="box" placeholder="First Name">
                     <br><br>
     		    	<label>Last Name:</label><br>
-    			    <input type="text" name="lastname" id="box" placeholder="Last Name">
+    			    <input type="text" name="lastname" id="box1" placeholder="Last Name">
     			    <br><br>
     		    	<label>Age:</label><br>
-     			    <input type="text" name="Age" id="box"placeholder="Your Age">
+     			    <input type="text" name="Age" id="box2" placeholder="Your Age">
      			    <br><br>
     		    	<label>Email Address:</label><br>
-     			    <input type="text" name="emailaddress" id="box" value="@gmail.com">
-     			    <br><br>
+     			    <input type="text" name="emailaddress" id="box3" value="@gmail.com">
+     			    <br>
+                    <p><a href="mailto:tsheringsherpa510@gmail.com" id="se">Send email</a></p>
     		    	<label>Gender:</label><br>
      			    <input type="radio" name="gender" id="mf" value="male"> Male
-     			    <input type="radio" name="gender" id="mf" value="female"> Female
+     			    <input type="radio" name="gender" id="mf1" value="female"> Female
                     <br><br>
                     <label>Other Details:</label><br>
-                    <textarea name="message" rows="5" cols="48" id="message" wrap="off"></textarea> 
+                    <textarea name="message" rows="5" cols="48" id="message"></textarea> 
                     <br>
-     			    <a href="mailto:tsheringsherpa510@gmail.com"><input type="button" name="submit" id="submit" value="Submit"></a>     			    
+                    <div  id="sub">
+     			    <input type="button" value="Submit">  
+                    </div>
      		    </form>
     	    <!-- end of form -->
         </div>  
      </div> 
      <!-- end of grid columns -->
 
-</body>
-
 <footer></footer>
 
+</body>
+
 </html>
+
+<!-- Husain Sir (2020). Youtube [online]
+Available from: https://www.youtube.com/watch?v=UEZ60e4MsgA [Accessed: 21 May 2021]-->
