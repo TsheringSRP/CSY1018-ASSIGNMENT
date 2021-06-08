@@ -1,0 +1,268 @@
+body.index{
+  background-color: black;
+}
+/*pictiure*/
+.pic{
+  background-image: url(HillView.gif);
+  background-repeat: no-repeat;
+  height: 815px; opacity: 80%;
+  background-size: 1600px 1000px;
+  margin-top:-70px; margin-left: -10px; margin-right:-8px;
+  margin-bottom: -800px;
+}
+/*end of picture*/
+/*top menu*/
+      ul{  
+        display: grid; 
+        grid-template-columns: 0fr 0fr 0fr 0fr;
+        margin-top: -29px;
+        position: sticky;
+        top: 17px;
+      }
+      li{ 
+        list-style: none;
+        position: relative; opacity: 80%;
+        left: 1130px;
+      }
+      a{
+        font-family: arial; text-decoration: none;
+        margin: 5px; font-size: 20px; color: white;
+        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        border-radius: 4px 4px 4px 4px;
+      }
+      .home{
+        background-color: white;
+        color: black;
+      }
+      /*end of top menu*/    
+      .line{ 
+        background-color: white; width: 100%; height: 3px;
+        opacity: 80%;
+        position: sticky;
+        top: 54px;
+      }
+/*middle text*/
+.welcome{ 
+  color: #663c3e; 
+  position: relative; top: 200px; text-align: center;
+  font-size: 100px; font-family: arial; font-weight: bold;
+  text-shadow: 5px 1px 11px white;
+}
+.website{ 
+  color: #e0e0e0; text-align: center;  
+  font-size: 100px; font-family: arial; font-weight: bold;
+  text-shadow: 0px 3px 10px #663c3e;
+  position: relative;
+  top:190px;
+}
+/*end of middle text*/
+      /*bottom menu*/
+      .menu1{
+        position: relative;
+        left: 650px; top: 220px;
+        font-size: 30px; color: #663c3e; text-decoration: none;
+        border: 3px solid; font-weight: bold;
+        padding-left: 20px; padding-right: 20px; padding-bottom: 10px; padding-top: 10px;
+        border-radius: 10px 10px 10px 10px; border-color:#663c3e;
+      }
+      /*end of bottom menu*/
+/*menu hovering*/
+a:hover{
+  color: black;
+  border-color: black;
+  background-color: white;
+  transition-duration: 0.2s;
+}
+.menu1:hover{
+  background-color: #663c3e;
+  color: #e0e0e0; border-color: #663c3e;
+  transition-duration: 0.2s;
+}
+/*end of menu hovering*/
+
+                       /*portfolio css*/
+body.portfolio{
+  background-color: #fdac058c;
+}
+/*top menu*/
+nav{
+  background-color: red;
+  height: 55px; margin-top: -1900px;
+  position: sticky;
+  top:0;
+  width: 101%;
+  margin-left: -8px;
+
+}
+      ul{  
+        margin-top: -100px;
+      }
+      li.port{ 
+        opacity:100%; 
+      }
+      .line1{ 
+        background-color: white; width: 100%; height: 3px;
+        position: sticky;
+        top: 54px;
+      }
+.portfolio{
+  color: black;
+  background-color: white;
+}
+.bg{
+  background-image:url(HillView.gif);
+  background-repeat: no-repeat;
+  background-size: 1310px 1480px;
+  margin-top: 100px;
+  height: 1480px;
+  width: 1310px;
+  margin-left: 100px;
+  border-radius: 15px 15px 15px 15px;
+}
+      /*placehoder images*/
+      .grid-container1,
+      .grid-container2{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        margin-top: 455px; margin-left: 125px;
+        grid-gap: 30px;     
+      }
+      .grid-item,
+      .grid-item1,
+      .grid-item2,
+      .grid-item3,
+      .grid-item4, 
+      .grid-item5,
+      .grid-item6{
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 300px;
+        transition-duration: 0.5s;
+        display: grid;
+        background-repeat: no-repeat;
+      }
+      .grid-item,
+      .grid-item1,
+      .grid-item2{
+        background-size: 400px 300px;
+      }
+      .grid-item{
+        background-image: url(placeholderimage.jpg);
+      }
+      .grid-item1{
+        background-image: url(placeholderimage.jpg);
+      }
+      .grid-item2{
+        background-image: url(placeholderimage.jpg);
+      }
+      .grid-item3{
+        background-image: url(placeholderimage.jpg);
+        background-size: 830px 400px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .grid-item4{
+        background-image: url(placeholderimage.jpg);
+        background-size: 400px 400px;
+      }
+      .grid-item3, 
+      .grid-item4{
+        height: 400px; 
+      }
+/*     detail of images*/
+      .details,
+      .details1,
+      .details2,
+      .details3,
+      .details4,
+      .details5,
+      .details6{ 
+        border-radius: 0 0 10px 10px;
+        background-color: #ddd;
+        box-shadow: 0px 0px 4px 0px;
+      }
+      .details,
+      .details1,
+      .details2{ 
+        margin-top: 300px;
+      }
+      .details{ 
+        background-image: url(placeholdertext400x150.png);
+      }
+      .details1{ 
+        background-image: url(placeholdertext400x150.png);
+      }
+      .details2{ 
+        background-image: url(placeholdertext400x150.png);
+      }
+      .details3,
+      .details4{
+        margin-top: 400px;
+      }
+      .details3{ 
+        background-image: url(placeholdertext830x200.png); 
+      }
+      .details4{  
+        background-image: url(placeholdertext400x200.png);
+      }
+/*     detail of images*/
+      .grid-container2{
+        display: grid;
+        grid-template-columns: 615px 615px; 
+        margin-top: 30px;      
+      }
+      .grid-item5,
+      .grid-item6{
+        height: 450px; 
+       }
+      .grid-item5{
+        background-image: url(placeholderimage.jpg);
+        background-size: 615px 450px;
+      }
+      .grid-item6{
+        background-image: url(placeholderimage.jpg);
+        background-size: 615px 450px;
+      }
+      /*detail of images*/
+      .details5,
+      .details6{
+        margin-top: 450px;
+      } 
+      .details5{
+        background-image: url(placeholdertext615x200.png);
+      }
+      .details6{  
+        background-image: url(placeholdertext615x200.png);
+      }
+      /*detail of images*/
+      /*end of placeholder images
+/*place holder images hover*/
+.grid-item:hover,
+.grid-item1:hover,
+.grid-item2:hover, 
+.grid-item3:hover, 
+.grid-item4:hover, 
+.grid-item5:hover,
+.grid-item6:hover{
+      box-shadow: 0px 2px 6px 0px;
+      height: 450px;
+}
+.grid-item3:hover,
+.grid-item4:hover{
+      height: 600px;
+}
+.grid-item5:hover,
+.grid-item6:hover{
+      height: 650px;
+}
+/*end of place holder images hover*/
+.foot{
+  height: 300px;
+}
+
+
+
+
+
+
+

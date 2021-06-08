@@ -1,0 +1,185 @@
+body{
+      background-color: black;
+}
+      /*top menu*/
+      nav{
+        background-color: black;
+        height: 55px; margin-top: -19px;
+        position: sticky;
+        top:0;
+      }
+      ul{  
+        display: grid; 
+        grid-template-columns: 0fr 0fr 0fr 0fr;
+        margin-top: -29px;
+        position: sticky;
+        top: 17px;
+      }
+      li{ 
+        list-style: none;
+        position: relative;
+        left: 1130px; opacity: 60%;
+      }
+      a{
+        margin: 5px; font-size: 20px; color: white;
+        border: 2px solid; padding-left: 5px; padding-right: 5px;
+        border-radius: 4px 4px 4px 4px;
+        color: white; 
+        font-family: arial; text-decoration: none;
+      }
+      .portfolio{
+        color: black;
+        background-color: white;
+      }
+      /*end of top menu*/    
+      .line{ 
+        background-color: white; width: 100%; height: 3px;
+        opacity: 80%;
+        position: sticky;
+        top: 54px;
+      }
+/*menu hovering*/
+a:hover{
+  color: black;
+  border-color: black;
+  transition-duration: 0.3s;
+  background-color: white;
+  transition-duration: 0.2s;
+}
+      /*placehoder images*/
+      .grid-container1,
+      .grid-container2{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        margin-top: 40px; margin-left: 125px;
+        grid-gap: 30px;      
+      }
+      .grid-item,
+      .grid-item1,
+      .grid-item2,
+      .grid-item3,
+      .grid-item4, 
+      .grid-item5,
+      .grid-item6{
+        background-color: #ddd;
+        border-radius: 10px 10px 10px 10px;
+        height: 300px;
+        transition-duration: 0.5s;
+        display: grid;
+        background-repeat: no-repeat;
+      }
+      .grid-item,
+      .grid-item1,
+      .grid-item2{
+        background-size: 400px 300px;
+      }
+      .grid-item{
+        background-image: url(imageholder.jpg);
+      }
+      .grid-item1{
+        background-image: url(imageholder.jpg);
+      }
+      .grid-item2{
+        background-image: url(imageholder.jpg);
+      }
+      .grid-item3{
+        background-image: url(imageholder.jpg);
+        background-size: 830px 400px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .grid-item4{
+        background-image: url(imageholder.jpg);
+        background-size: 400px 400px;
+      }
+      .grid-item3, 
+      .grid-item4{
+        height: 400px; 
+      }
+/*     detail of images*/
+      .details,
+      .details1,
+      .details2,
+      .details3,
+      .details4,
+      .details5,
+      .details6{ 
+        border-radius: 0 0 10px 10px;
+        background-color: #aaa;
+      }
+      .details,
+      .details1,
+      .details2{ 
+        margin-top: 300px;
+      }
+      .details{ 
+        background-image: url(placeholdertext400x150.png);
+      }
+      .details1{ 
+        background-image: url(placeholdertext400x150.png);
+      }
+      .details2{ 
+        background-image: url(placeholdertext400x150.png);
+      }
+      .details3,
+      .details4{
+        margin-top: 400px;
+      }
+      .details3{ 
+        background-image: url(placeholdertext830x200.png); 
+      }
+      .details4{  
+        background-image: url(placeholdertext400x200.png);
+      }
+/*     detail of images*/
+      .grid-container2{
+        display: grid;
+        grid-template-columns: 615px 615px;       
+      }
+      .grid-item5,
+      .grid-item6{
+        height: 450px; 
+       }
+      .grid-item5{
+        background-image: url(imageholder.jpg);
+        background-size: 615px 450px;
+      }
+      .grid-item6{
+        background-image: url(imageholder.jpg);
+        background-size: 615px 450px;
+      }
+      /*detail of images*/
+      .details5,
+      .details6{
+        margin-top: 450px;
+      } 
+      .details5{
+        background-image: url(placeholdertext615x200.png);
+      }
+      .details6{  
+        background-image: url(placeholdertext615x200.png);
+      }
+      /*detail of images*/
+      /*end of placeholder images
+/*place holder images hover*/
+.grid-item:hover,
+.grid-item1:hover,
+.grid-item2:hover, 
+.grid-item3:hover, 
+.grid-item4:hover, 
+.grid-item5:hover,
+.grid-item6:hover{
+      box-shadow: 0px 7px 10px 1px white;
+      height: 450px;
+}
+.grid-item3:hover,
+.grid-item4:hover{
+      height: 600px;
+}
+.grid-item5:hover,
+.grid-item6:hover{
+      height: 650px;
+}
+/*end of place holder images hover*/
+
+
