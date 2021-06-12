@@ -973,7 +973,11 @@ tr,td{
           font-size: 15px;
         }
 }
-
+@media screen and (max-width: 439px){
+  #igicon{
+    margin-left: 10%;
+  }
+}
 @media screen and (max-width: 415px){
   tr,td{
     font-size: 6px;
@@ -1170,10 +1174,9 @@ h2#subheading24 span{
 .image-container6{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 1150px;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     background-size: 500px 500px;
     background-repeat: no-repeat;
     height: 500px;
@@ -1193,14 +1196,11 @@ h2#subheading24 span{
   #image24{
     background-image: url(Validation/Capture3.png);
   } 
-  
-  .image-container7{
-    display: grid;
-    grid-template-columns: 1fr;
-  } 
   #image25{
     background-image: url(Validation/Capture4.png);
-    margin-left: 33%;
+  }  
+  #image26{
+    background-image: url(Validation/Capture5.png);
   }  
 
      
@@ -1228,7 +1228,7 @@ h2#subheading24 span{
   height: 350px;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     background-size: 400px 400px;
     height: 400px;
     width: 400px;
@@ -1250,7 +1250,7 @@ h2#subheading24 span{
   height: 270px;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     background-size: 350px 350px;
     height: 350px;
     width: 350px;
@@ -1272,7 +1272,7 @@ h2#subheading24 span{
   height: 240px;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     background-size: 300px 300px;
     height: 300px;
     width: 300px;
@@ -1286,11 +1286,14 @@ h2#subheading24 span{
 .image-container6{
   grid-template-columns: 1fr;
 }
+#CN{
+  grid-area: 7 / 1 / 8 / 2;
+}
+#CNN{
+  grid-area: 11 / 1 / 12 / 2;
+}
 .image-container5{
   grid-template-columns: 1fr 1fr;
-}
-.image-container7{
-  margin-top: 520px;
 }
 #subheading4,
 #subheading12,
@@ -1330,7 +1333,7 @@ h2#subheading24 span{
   margin-left: 25%;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     background-size: 350px 350px;
     height: 350px;
     width: 350px;
@@ -1339,9 +1342,6 @@ h2#subheading24 span{
   #PV{
     grid-area: 3 / 1 / 4 / 2;
   }
-  #CN{
-    grid-area:7 / 1 / 8 / 2;
-}
 }
 @media screen and (max-width: 520px){
 #image1,#image2,#image3,#image4,#image5,#image6,#image7,#image8,#image9,#image10,
@@ -1352,7 +1352,7 @@ h2#subheading24 span{
   margin-left: 18%;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     background-size: 300px 300px;
     height: 300px;
     width: 300px;
@@ -1364,9 +1364,6 @@ h2#subheading24 span{
 #image20{
   margin-left: 5%;
 }
-.image-container7{
-  margin-top: 320px;
-}
 }
 @media screen and (max-width: 480px){
   #responsive{
@@ -1377,7 +1374,7 @@ h2#subheading24 span{
   margin-left: 6%;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     margin-left: 6%;
   }
 }
@@ -1408,7 +1405,7 @@ h2#subheading24 span{
   background-size: 250px 150px;
 }
   #image21,#image22,#image23,
-  #image24,#image25{
+  #image24,#image25,#image26{
     background-size: 250px 250px;
   }
 }
