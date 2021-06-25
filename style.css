@@ -140,11 +140,11 @@ a:hover{
 /*------------------------------------------------------------*/
 
 /*responsive*/
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 1024px){
 
           body.index{
             width: 100%;
-            background-size: 100% 755px;
+            background-size: 100% 1366px;
           }
           ul{  
             background-color: #4b3156;
@@ -239,7 +239,7 @@ body.portfolio{
 }
 
 ul.port{
-  right: 13px;
+  right: 1050px;
 }
 
       .line1{
